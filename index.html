@@ -1,0 +1,4844 @@
+<!DOCTYPE html>
+<html lang="ru" data-fs="md">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Торговля · 贸易 — русский язык для китайских студентов (A2–B1)</title>
+<meta name="description" content="Учебный сайт по теме «Торговля» для китайских студентов, изучающих русский язык (A2–B1): 30 слов с картинками и переводом, устойчивые сочетания, диалог и текст с китайским переводом, интерактивный тест с мгновенной проверкой.">
+<meta name="theme-color" content="#F7F2E8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Торговля · 贸易 — русский язык для китайских студентов">
+<meta property="og:description" content="30 слов, 12 сочетаний, диалог и текст с переводом, тест с мгновенной проверкой. Уровень A2–B1.">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23A84423'/%3E%3Cpath d='M13 7v18M13 7h5.5a5 5 0 0 1 0 10H13M10 23h13' fill='none' stroke='%23FFFDF8' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+/* ==========================================================================
+   Торговля · 贸易 — оформление сайта
+   Палитра: бумага, чернила, золото, терракота, хвоя, синий, слива.
+   Пять подгрупп лексики кодируются цветом (--g, --g-soft, --g-tint).
+   ========================================================================== */
+
+/* ---------- 1. Переменные и сброс ---------- */
+:root {
+  --paper: #F7F2E8;
+  --paper-2: #FBF6EC;
+  --card: #FFFDF8;
+
+  --ink: #18231E;
+  --ink-2: #43524A;
+  --ink-3: #5F6E66;
+
+  --line: #E2D8C6;
+  --line-2: #EFE8DA;
+
+  --gold: #B5791F;
+  --gold-ink: #8A5A12;
+  --gold-soft: #E7CB98;
+  --gold-tint: #F6EBD6;
+
+  --rust: #A84423;
+  --rust-ink: #8F3A1D;
+  --rust-soft: #E3AE97;
+  --rust-tint: #F7E1D6;
+
+  --forest: #1F5A4C;
+  --forest-soft: #A9CCC0;
+  --forest-tint: #DCEAE3;
+
+  --navy: #2A4A6B;
+  --navy-soft: #B3C6D8;
+  --navy-tint: #E1E9F1;
+
+  --plum: #7A3E58;
+  --plum-soft: #D6B7C4;
+  --plum-tint: #F1E2E8;
+
+  --font-sans: 'Segoe UI', 'Inter', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+  --font-serif: Georgia, 'Times New Roman', 'Songti SC', 'STSong', 'SimSun', 'Noto Serif SC', serif;
+
+  --maxw: 1180px;
+  --radius: 18px;
+  --radius-lg: 26px;
+
+  --shadow-sm: 0 1px 2px rgba(24, 35, 30, .05);
+  --shadow: 0 2px 4px rgba(24, 35, 30, .04), 0 18px 40px -24px rgba(24, 35, 30, .35);
+  --shadow-lg: 0 30px 60px -34px rgba(24, 35, 30, .45);
+
+  --ease: cubic-bezier(.22, .61, .36, 1);
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 92px;
+  -webkit-text-size-adjust: 100%;
+}
+
+html[data-fs="lg"] { font-size: 17.5px; }
+html[data-fs="xl"] { font-size: 19px; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image: radial-gradient(circle at 1px 1px, rgba(24, 35, 30, .055) 1px, transparent 0);
+  background-size: 22px 22px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+[hidden] { display: none !important; }
+
+:lang(zh-CN) {
+  font-family: var(--font-sans);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, p, ul, ol, figure { margin: 0; }
+
+ul, ol { padding: 0; }
+
+img, svg { display: block; max-width: 100%; }
+
+a { color: var(--rust-ink); text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+
+button, input, select, textarea { font: inherit; color: inherit; }
+
+::selection { background: var(--gold-soft); color: var(--ink); }
+
+:focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ---------- 2. Утилиты ---------- */
+.wrap {
+  width: min(100% - 40px, var(--maxw));
+  margin-inline: auto;
+}
+
+.ic {
+  width: 1.25em;
+  height: 1.25em;
+  flex: none;
+}
+.ic--sm { width: 1.05em; height: 1.05em; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .55em;
+  padding: .78em 1.35em;
+  border: 1.5px solid transparent;
+  border-radius: 999px;
+  font-size: .95rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform .2s var(--ease), background-color .2s var(--ease), border-color .2s var(--ease), color .2s var(--ease), box-shadow .2s var(--ease);
+  background: transparent;
+  color: var(--ink);
+}
+.btn:hover { text-decoration: none; }
+.btn:active { transform: translateY(1px); }
+
+.btn--primary {
+  background: var(--rust);
+  border-color: var(--rust);
+  color: #fff;
+  box-shadow: 0 10px 24px -14px rgba(168, 68, 35, .9);
+}
+.btn--primary:hover { background: #8F3A1D; border-color: #8F3A1D; color: #fff; transform: translateY(-2px); }
+
+.btn--dark {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper-2);
+}
+.btn--dark:hover { background: #0E1713; color: var(--paper-2); transform: translateY(-2px); }
+
+.btn--ghost {
+  border-color: var(--line);
+  background: var(--card);
+  color: var(--ink);
+}
+.btn--ghost:hover { border-color: var(--ink); transform: translateY(-2px); }
+.btn--ghost[aria-pressed="true"] {
+  border-color: var(--gold);
+  background: var(--gold-tint);
+  color: var(--gold-ink);
+  box-shadow: inset 0 0 0 1px rgba(181, 121, 31, .25);
+}
+
+.btn--sm { padding: .5em .95em; font-size: .82rem; }
+.btn--lg { padding: .95em 1.7em; font-size: 1rem; }
+
+.btn:disabled { opacity: .55; cursor: not-allowed; transform: none; }
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .4em;
+  padding: .32em .8em;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .01em;
+  color: var(--ink-2);
+}
+.chip--place { color: var(--ink); }
+.chip--soft { background: var(--paper-2); color: var(--ink-3); font-weight: 500; }
+
+.speak {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+  flex: none;
+  transition: background-color .2s, border-color .2s, color .2s, transform .2s;
+}
+.speak .ic { width: 18px; height: 18px; }
+.speak:hover { background: var(--ink); border-color: var(--ink); color: var(--paper-2); transform: scale(1.06); }
+.speak--sm { width: 30px; height: 30px; }
+.speak--sm .ic { width: 15px; height: 15px; }
+.speak.is-speaking { background: var(--gold); border-color: var(--gold); color: var(--ink); animation: pulse 1.4s infinite; }
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(181, 121, 31, .35); }
+  50% { box-shadow: 0 0 0 8px rgba(181, 121, 31, 0); }
+}
+
+/* Цветовое кодирование подгрупп */
+[data-g="people"] { --g: var(--gold); --g-ink: var(--gold-ink); --g-soft: var(--gold-soft); --g-tint: var(--gold-tint); }
+[data-g="goods"] { --g: var(--rust); --g-ink: var(--rust-ink); --g-soft: var(--rust-soft); --g-tint: var(--rust-tint); }
+[data-g="price"] { --g: var(--forest); --g-ink: var(--forest); --g-soft: var(--forest-soft); --g-tint: var(--forest-tint); }
+[data-g="pay"] { --g: var(--navy); --g-ink: var(--navy); --g-soft: var(--navy-soft); --g-tint: var(--navy-tint); }
+[data-g="deal"] { --g: var(--plum); --g-ink: var(--plum); --g-soft: var(--plum-soft); --g-tint: var(--plum-tint); }
+
+/* ---------- 3. Служебные элементы страницы ---------- */
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 200;
+  padding: .7em 1.2em;
+  border-radius: 10px;
+  background: var(--ink);
+  color: var(--paper-2);
+  text-decoration: none;
+  transform: translateY(-160%);
+  transition: transform .2s var(--ease);
+}
+.skip-link:focus { transform: none; color: var(--paper-2); }
+
+.noscript {
+  padding: 12px 20px;
+  background: var(--gold-tint);
+  border-bottom: 1px solid var(--gold-soft);
+  color: var(--ink);
+  font-size: .88rem;
+  text-align: center;
+}
+
+.scroll-progress {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 3px;
+  z-index: 120;
+  background: rgba(24, 35, 30, .06);
+}
+.scroll-progress span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--rust), var(--gold));
+  transition: width .1s linear;
+}
+
+/* ---------- 4. Шапка ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(247, 242, 232, .88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(226, 216, 198, .8);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  min-height: 70px;
+  padding-block: 10px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  text-decoration: none;
+  color: var(--ink);
+  flex: none;
+}
+.brand:hover { color: var(--ink); }
+
+.brand__mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--ink);
+  color: var(--paper-2);
+  display: grid;
+  place-items: center;
+  flex: none;
+}
+.brand__mark .ic { width: 21px; height: 21px; }
+
+.brand__text { display: flex; flex-direction: column; line-height: 1.1; }
+.brand__text b { font-size: 1.02rem; letter-spacing: -.01em; }
+.brand__text span { font-size: .68rem; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-3); margin-top: 3px; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-inline: auto;
+  overflow-x: auto;
+  scrollbar-width: none;
+  max-width: 100%;
+}
+.nav::-webkit-scrollbar { display: none; }
+
+.nav a {
+  padding: .45em .7em;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  color: var(--ink-2);
+  text-decoration: none;
+  font-size: .88rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color .2s, background-color .2s, border-color .2s;
+}
+.nav a:hover { color: var(--ink); background: var(--card); border-color: var(--line); }
+.nav a.is-active { color: var(--ink); background: var(--card); border-color: var(--line); box-shadow: var(--shadow-sm); }
+
+.header-tools { display: flex; align-items: center; gap: 10px; flex: none; }
+
+.font-controls {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  overflow: hidden;
+}
+.font-controls button {
+  border: 0;
+  background: transparent;
+  padding: .35em .55em;
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--ink-2);
+  cursor: pointer;
+  line-height: 1.4;
+}
+.font-controls button:hover { background: var(--paper-2); color: var(--ink); }
+.font-controls button + button { border-left: 1px solid var(--line); }
+
+/* ---------- 5. Первый экран ---------- */
+.hero { padding: clamp(36px, 6vw, 74px) 0 clamp(40px, 6vw, 66px); }
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, .98fr);
+  gap: clamp(28px, 5vw, 58px);
+  align-items: center;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .6em;
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.eyebrow__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--rust);
+  box-shadow: 0 0 0 4px rgba(168, 68, 35, .14);
+}
+.eyebrow__zh {
+  font-weight: 500;
+  letter-spacing: .04em;
+  text-transform: none;
+  color: var(--ink-3);
+  padding-left: .9em;
+  border-left: 1px solid var(--line);
+}
+
+.hero-title {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: clamp(10px, 2vw, 24px);
+  margin-top: 18px;
+  font-weight: 800;
+  letter-spacing: -.03em;
+  line-height: .95;
+}
+.hero-title__ru {
+  font-size: clamp(3.1rem, 8.4vw, 6rem);
+  letter-spacing: -.035em;
+}
+.hero-title__zh {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3.4vw, 2.5rem);
+  font-weight: 400;
+  letter-spacing: .1em;
+  color: var(--rust);
+}
+
+.hero-sub {
+  margin-top: 18px;
+  max-width: 38ch;
+  font-family: var(--font-serif);
+  font-size: clamp(1.02rem, 1.6vw, 1.2rem);
+  line-height: 1.45;
+  color: var(--ink-2);
+}
+
+.lead {
+  margin-top: 16px;
+  max-width: 50ch;
+  font-size: 1.02rem;
+  color: var(--ink-2);
+}
+.lead--zh {
+  margin-top: 8px;
+  font-size: .95rem;
+  color: var(--ink-3);
+  max-width: 44ch;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-top: 34px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+.hero-meta li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-right: clamp(18px, 3vw, 34px);
+  margin-right: clamp(18px, 3vw, 34px);
+  border-right: 1px solid var(--line);
+}
+.hero-meta li:last-child { border-right: 0; padding-right: 0; margin-right: 0; }
+.hero-meta b {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.hero-meta span {
+  font-size: .72rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.hero-art { position: relative; }
+
+.hero-art__frame {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(160deg, var(--paper-2), #F2E8D6);
+  padding: clamp(8px, 1.4vw, 16px);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.hero-art__frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 90% at 80% 0%, rgba(181, 121, 31, .16), transparent 60%);
+  pointer-events: none;
+}
+.hero-art__frame svg { width: 100%; height: auto; }
+
+.hero-art__caption {
+  margin-top: 10px;
+  font-size: .74rem;
+  letter-spacing: .03em;
+  color: var(--ink-3);
+  text-align: right;
+}
+
+/* ---------- 6. Секции и заголовки ---------- */
+.section { padding: clamp(52px, 8vw, 96px) 0; position: relative; }
+.section + .section { border-top: 1px solid rgba(226, 216, 198, .7); }
+
+.section-head { max-width: 780px; margin-bottom: clamp(26px, 4vw, 44px); }
+
+.section-num {
+  display: inline-flex;
+  align-items: center;
+  gap: .7em;
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--rust);
+}
+.section-num::before {
+  content: "";
+  width: 26px;
+  height: 1.5px;
+  background: currentColor;
+  display: inline-block;
+}
+
+.section-title {
+  margin-top: 12px;
+  font-family: var(--font-serif);
+  font-size: clamp(1.85rem, 4vw, 2.9rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -.015em;
+}
+
+.section-lead { margin-top: 14px; font-size: 1.02rem; color: var(--ink-2); max-width: 66ch; }
+.section-lead--zh { margin-top: 6px; font-size: .93rem; color: var(--ink-3); max-width: 60ch; }
+
+.note-block {
+  margin-top: 26px;
+  padding: clamp(18px, 2.6vw, 26px);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 253, 248, .6);
+}
+.note-block h3 {
+  font-size: .86rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.note-block h3 span { font-weight: 500; text-transform: none; letter-spacing: 0; color: var(--ink-3); }
+.note-block ul { margin-top: 12px; padding-left: 0; list-style: none; display: grid; gap: 9px; }
+.note-block li { position: relative; padding-left: 18px; font-size: .95rem; color: var(--ink-2); }
+.note-block li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .62em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+.note-block i { font-style: normal; color: var(--ink); font-weight: 600; }
+.note-zh { color: var(--ink-3); font-size: .88em; }
+
+/* ---------- 7. Схема группы ---------- */
+.field {
+  display: grid;
+  grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
+  gap: clamp(16px, 2.4vw, 28px);
+  align-items: stretch;
+}
+
+.field-core {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 26px;
+  border-radius: var(--radius-lg);
+  background: var(--ink);
+  color: var(--paper-2);
+  min-height: 220px;
+}
+.field-core::before {
+  content: "";
+  position: absolute;
+  right: -46px;
+  bottom: -62px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: 22px solid rgba(255, 253, 248, .07);
+}
+.field-core::after {
+  content: "₽";
+  position: absolute;
+  right: 18px;
+  top: 12px;
+  font-family: var(--font-serif);
+  font-size: 3.2rem;
+  color: rgba(255, 253, 248, .12);
+  line-height: 1;
+}
+.field-core__label {
+  font-size: .7rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--gold-soft);
+}
+.field-core__ru {
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  line-height: 1.05;
+  margin-top: 6px;
+}
+.field-core__zh { font-size: .95rem; color: rgba(251, 246, 236, .72); margin-top: 4px; }
+.field-core__def {
+  margin-top: 16px;
+  max-width: 34ch;
+  font-size: .85rem;
+  line-height: 1.55;
+  color: rgba(251, 246, 236, .78);
+}
+.field-core__def span {
+  display: block;
+  margin-top: 4px;
+  font-size: .8rem;
+  color: rgba(251, 246, 236, .5);
+}
+.field-core__foot {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 253, 248, .14);
+}
+.field-core__forms { font-size: .78rem; color: rgba(251, 246, 236, .55); }
+.field-core__forms b { font-weight: 600; color: rgba(251, 246, 236, .85); }
+.field-core__note {
+  margin-top: 8px;
+  font-size: .72rem;
+  letter-spacing: .02em;
+  color: rgba(251, 246, 236, .45);
+}
+
+.field-branches { display: grid; gap: 10px; }
+
+.branch {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) auto;
+  grid-template-areas:
+    "idx main count"
+    "idx ex   ex";
+  gap: 2px 16px;
+  align-items: center;
+  width: 100%;
+  padding: 13px 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--card);
+  text-align: left;
+  cursor: pointer;
+  transition: transform .22s var(--ease), border-color .22s, box-shadow .22s, background-color .22s;
+}
+.branch:hover {
+  transform: translateX(5px);
+  border-color: var(--g);
+  background: var(--g-tint);
+  box-shadow: var(--shadow-sm);
+}
+.branch__idx {
+  grid-area: idx;
+  font-family: var(--font-serif);
+  font-size: .95rem;
+  color: var(--g-ink);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.branch__idx::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--g);
+  flex: none;
+}
+.branch__main { grid-area: main; min-width: 0; }
+.branch__ru { display: block; font-weight: 700; font-size: 1.02rem; }
+.branch__zh { display: block; font-size: .84rem; color: var(--ink-3); }
+.branch__count {
+  grid-area: count;
+  font-size: .75rem;
+  color: var(--g-ink);
+  background: var(--g-tint);
+  border-radius: 999px;
+  padding: .2em .7em;
+  white-space: nowrap;
+}
+.branch__ex {
+  grid-area: ex;
+  font-size: .8rem;
+  color: var(--ink-3);
+  margin-top: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---------- 8. Словарь ---------- */
+.vocab-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 220px;
+  max-width: 320px;
+  padding: .55em .9em;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--ink-3);
+  transition: border-color .2s, box-shadow .2s;
+}
+.search:focus-within { border-color: var(--ink-2); box-shadow: 0 0 0 4px rgba(42, 74, 107, .1); }
+.search input {
+  border: 0;
+  background: transparent;
+  width: 100%;
+  min-width: 0;
+  font-size: .9rem;
+  color: var(--ink);
+  outline: none;
+}
+.search input::placeholder { color: var(--ink-3); }
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .45em;
+  padding: .45em .85em;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: all .2s var(--ease);
+}
+.filter-chip:hover { border-color: var(--ink-2); color: var(--ink); }
+.filter-chip[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper-2);
+}
+.filter-chip__n { font-size: .7rem; opacity: .6; }
+
+.learn-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 150px;
+  margin-left: auto;
+}
+.learn-progress__label { font-size: .76rem; color: var(--ink-3); letter-spacing: .02em; }
+.learn-progress__label b { color: var(--ink); }
+.progress-track {
+  display: block;
+  height: 6px;
+  border-radius: 99px;
+  background: #E7DDCB;
+  overflow: hidden;
+}
+.progress-fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--forest), #2E7A65);
+  transition: width .35s var(--ease);
+}
+
+.word-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
+  gap: 18px;
+}
+
+.word-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  overflow: hidden;
+  transition: transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s;
+  position: relative;
+}
+.word-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); border-color: #D3C6AF; }
+
+.word-card__media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: var(--g-tint);
+  display: grid;
+  place-items: center;
+  padding: 4px;
+  border-bottom: 1px solid var(--line-2);
+  overflow: hidden;
+}
+.word-card__media .ic { width: 100%; height: 100%; }
+
+.word-card__tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: .25em .7em;
+  border-radius: 999px;
+  background: rgba(255, 253, 248, .88);
+  border: 1px solid rgba(226, 216, 198, .9);
+  font-size: .66rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: var(--g-ink);
+  backdrop-filter: blur(4px);
+}
+
+.word-card.is-learned { border-color: var(--forest-soft); }
+.word-card.is-learned .word-card__media::after {
+  content: "✓";
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--forest);
+  color: var(--card);
+  display: grid;
+  place-items: center;
+  font-size: .85rem;
+  font-weight: 700;
+  box-shadow: 0 4px 10px -4px rgba(31, 90, 76, .8);
+}
+
+.word-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 16px 18px 12px;
+  flex: 1;
+}
+
+.word-card__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+}
+.word-card__ru {
+  font-size: 1.48rem;
+  font-weight: 700;
+  letter-spacing: -.015em;
+  line-height: 1.15;
+  max-width: 100%;
+}
+.word-card__pos {
+  font-size: .64rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+.word-card__zh { font-size: 1.02rem; color: var(--ink); font-weight: 600; margin-top: 1px; }
+
+.word-card__ex {
+  margin-top: 7px;
+  font-size: .87rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+.word-card__exzh { font-size: .8rem; line-height: 1.55; color: var(--ink-3); }
+
+.word-card__note { margin-top: 4px; border-top: 1px dashed var(--line-2); padding-top: 4px; }
+.word-card__note summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: .74rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--g-ink);
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.word-card__note summary::-webkit-details-marker { display: none; }
+.word-card__note summary::before {
+  content: "+";
+  display: inline-grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  font-size: .7rem;
+  line-height: 1;
+  flex: none;
+}
+.word-card__note[open] summary::before { content: "−"; }
+.word-card__note p { font-size: .82rem; line-height: 1.6; color: var(--ink-2); padding: 0 0 6px; }
+
+.word-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 14px 12px;
+  border-top: 1px solid var(--line-2);
+  background: rgba(251, 246, 236, .5);
+}
+
+.learn-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: .42em .85em;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--ink-2);
+  font-size: .74rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s var(--ease);
+}
+.learn-btn:hover { border-color: var(--forest); color: var(--forest); }
+.learn-btn[aria-pressed="true"] { background: var(--forest); border-color: var(--forest); color: var(--card); }
+
+.empty-state {
+  padding: 28px;
+  text-align: center;
+  color: var(--ink-3);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  margin-top: 8px;
+}
+
+/* ---------- 9. Сочетания и таблица ---------- */
+.colloc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+}
+
+.colloc {
+  position: relative;
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--card);
+  transition: transform .22s var(--ease), box-shadow .22s, border-color .22s;
+}
+.colloc:hover { transform: translateY(-3px); box-shadow: var(--shadow-sm); border-color: #D3C6AF; }
+.colloc::before {
+  content: attr(data-num);
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--line);
+}
+.colloc__ru { font-size: 1.1rem; font-weight: 700; padding-right: 34px; line-height: 1.35; }
+.colloc__zh { margin-top: 3px; font-size: .92rem; font-weight: 600; color: var(--rust-ink); }
+.colloc__ex {
+  margin-top: 12px;
+  padding-top: 11px;
+  border-top: 1px dashed var(--line-2);
+  font-size: .87rem;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+.colloc__exzh { margin-top: 4px; font-size: .8rem; color: var(--ink-3); line-height: 1.55; }
+
+.extras { margin-top: clamp(30px, 4vw, 46px); }
+.extras h3 {
+  font-size: .87rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  margin-bottom: 14px;
+}
+.extras h3 span { font-weight: 500; letter-spacing: 0; text-transform: none; color: var(--ink-3); }
+
+.table-wrap {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  overflow-x: auto;
+}
+
+.extras-table { width: 100%; border-collapse: collapse; min-width: 620px; }
+.extras-table th {
+  text-align: left;
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 700;
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-2);
+  white-space: nowrap;
+}
+.extras-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line-2);
+  font-size: .9rem;
+  vertical-align: top;
+}
+.extras-table tr:last-child td { border-bottom: 0; }
+.extras-table td:first-child { font-weight: 700; }
+.extras-table td:nth-child(2) { font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-3); white-space: nowrap; }
+.extras-table td:nth-child(3) { color: var(--ink-2); }
+.extras-table td:last-child { color: var(--ink-2); }
+.extras-table td:last-child span { display: block; color: var(--ink-3); font-size: .8rem; margin-top: 2px; }
+
+/* ---------- 10. Диалог ---------- */
+.dialogue {
+  padding: clamp(18px, 3vw, 34px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--card);
+  box-shadow: var(--shadow-sm);
+}
+
+.dialogue-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed var(--line);
+}
+.dialogue-meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.dialogue-controls { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.dialogue-intro { margin-top: 16px; font-size: .96rem; color: var(--ink-2); max-width: 70ch; }
+.dialogue-intro--zh { margin-top: 4px; font-size: .88rem; color: var(--ink-3); }
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.line {
+  display: flex;
+  gap: 12px;
+  max-width: 88%;
+  align-items: flex-start;
+}
+.line--lihua { margin-left: auto; flex-direction: row-reverse; }
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--ink);
+  color: var(--paper-2);
+  font-weight: 700;
+  font-size: .95rem;
+  flex: none;
+  margin-top: 2px;
+}
+.line--lihua .avatar { background: var(--rust); }
+
+.bubble {
+  position: relative;
+  padding: 13px 17px 12px;
+  border: 1px solid var(--line-2);
+  border-radius: 4px 18px 18px 18px;
+  background: var(--paper-2);
+  min-width: 0;
+  transition: outline-color .2s, background-color .2s;
+}
+.line--lihua .bubble {
+  border-radius: 18px 4px 18px 18px;
+  background: var(--rust-tint);
+  border-color: #EFCBB9;
+}
+.line.is-playing .bubble { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+.bubble__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.bubble__name {
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.bubble__ru { font-size: 1rem; line-height: 1.55; }
+.bubble__zh { margin-top: 6px; font-size: .87rem; color: var(--ink-2); }
+.bubble__tip {
+  display: flex;
+  gap: 7px;
+  margin-top: 9px;
+  padding-top: 9px;
+  border-top: 1px dashed rgba(24, 35, 30, .14);
+  font-size: .79rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+.bubble__tip .ic { width: 15px; height: 15px; margin-top: .15em; color: var(--gold-ink); }
+
+.dialogue.hide-zh .bubble__zh { display: none; }
+
+.glossary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px dashed var(--line);
+}
+.glossary__title {
+  width: 100%;
+  font-size: .7rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.gloss-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .5em;
+  padding: .35em .75em;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  font-size: .8rem;
+}
+.gloss-chip b { font-weight: 600; }
+.gloss-chip span { color: var(--ink-3); font-size: .78rem; }
+
+.tts-note { margin-top: 14px; font-size: .82rem; color: var(--rust-ink); }
+.no-tts .speak,
+.no-tts #play-dialogue { display: none; }
+
+/* ---------- 11. Текст ---------- */
+.reader {
+  max-width: 880px;
+  margin-inline: auto;
+  padding: clamp(22px, 4vw, 44px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--card);
+  box-shadow: var(--shadow-sm);
+}
+
+.reader-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line-2);
+}
+.reader-head h3 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 2.8vw, 1.95rem);
+  line-height: 1.15;
+  font-weight: 600;
+  max-width: 30ch;
+}
+.reader-title-zh { margin-top: 5px; font-size: .92rem; color: var(--ink-3); }
+.reader-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+
+.reader-body { margin-top: 22px; display: flex; flex-direction: column; gap: 20px; }
+.para__ru { font-size: 1.04rem; line-height: 1.78; }
+.para__zh {
+  display: none;
+  margin-top: 8px;
+  padding-left: 14px;
+  border-left: 3px solid var(--gold-soft);
+  font-size: .92rem;
+  line-height: 1.72;
+  color: var(--ink-2);
+}
+.reader.show-zh .para__zh { display: block; }
+
+.gloss {
+  position: relative;
+  border-bottom: 2px dotted var(--rust);
+  cursor: help;
+}
+.gloss__tip {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 9px);
+  transform: translateX(-50%);
+  padding: .3em .65em;
+  border-radius: 7px;
+  background: var(--ink);
+  color: var(--paper-2);
+  font-size: .78rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .15s;
+  z-index: 5;
+}
+.gloss__tip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: var(--ink);
+}
+.gloss:hover .gloss__tip,
+.gloss:focus .gloss__tip { opacity: 1; }
+
+.reader-gloss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 1px dashed var(--line);
+}
+
+.check {
+  max-width: 880px;
+  margin: clamp(24px, 4vw, 38px) auto 0;
+  padding: clamp(20px, 3vw, 32px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper-2);
+}
+.check-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.check-head h3 { font-size: 1.05rem; font-weight: 700; }
+.check-head h3 span { font-weight: 500; color: var(--ink-3); font-size: .82rem; }
+.check-score { font-size: .82rem; color: var(--ink-3); font-weight: 600; }
+
+.check-q { padding: 16px 0; border-top: 1px solid var(--line); }
+.check-q:first-child { border-top: 0; padding-top: 4px; }
+.check-q__title { display: flex; gap: 10px; font-size: .97rem; font-weight: 600; line-height: 1.5; }
+.check-q__num {
+  font-family: var(--font-serif);
+  color: var(--rust);
+  flex: none;
+}
+.check-opts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 11px;
+}
+
+.check-opt {
+  padding: .5em .85em;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--ink-2);
+  font-size: .87rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all .2s var(--ease);
+}
+.check-opt:hover:not(:disabled) { border-color: var(--ink-2); color: var(--ink); }
+.check-opt.is-correct { border-color: var(--forest); background: var(--forest-tint); color: var(--ink); font-weight: 600; }
+.check-opt.is-wrong { border-color: #B23A2A; background: #FBEDE9; color: var(--ink); text-decoration: line-through; text-decoration-color: rgba(178, 58, 42, .5); }
+.check-opt:disabled { cursor: default; }
+.check-opt.is-dim { opacity: .5; }
+
+.check-fb {
+  display: none;
+  margin-top: 10px;
+  padding: 9px 13px;
+  border-radius: 9px;
+  background: var(--card);
+  border-left: 3px solid var(--line);
+  font-size: .84rem;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+.check-fb.is-shown { display: block; }
+.check-fb.is-ok { border-left-color: var(--forest); }
+.check-fb.is-bad { border-left-color: #B23A2A; }
+
+/* ---------- 12. Тест ---------- */
+.section--quiz {
+  background: var(--ink);
+  color: var(--paper-2);
+  overflow: hidden;
+}
+.section--quiz::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(60% 50% at 12% 0%, rgba(181, 121, 31, .28), transparent 62%),
+    radial-gradient(55% 60% at 92% 100%, rgba(168, 68, 35, .3), transparent 60%);
+  pointer-events: none;
+}
+.section--quiz .wrap { position: relative; z-index: 1; }
+.section--quiz .section-head { max-width: 720px; }
+.section--quiz .section-num { color: var(--gold-soft); }
+.section--quiz .section-title { color: var(--paper-2); }
+.section--quiz .section-lead { color: rgba(251, 246, 236, .78); }
+.section--quiz .section-lead--zh { color: rgba(251, 246, 236, .55); }
+
+.quiz-shell {
+  max-width: 900px;
+  margin-inline: auto;
+  padding: clamp(20px, 3.6vw, 40px);
+  border-radius: var(--radius-lg);
+  background: var(--paper-2);
+  color: var(--ink);
+  box-shadow: var(--shadow-lg);
+}
+
+.quiz-start__head h3 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.35rem, 2.6vw, 1.8rem);
+  font-weight: 600;
+  line-height: 1.15;
+}
+.quiz-start__head p { margin-top: 8px; font-size: .92rem; color: var(--ink-2); }
+.quiz-kicker {
+  display: inline-block;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 8px;
+}
+
+.quiz-start__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(220px, .6fr);
+  gap: clamp(20px, 3vw, 38px);
+  align-items: start;
+}
+
+.quiz-side {
+  border-left: 1px solid var(--line);
+  padding-left: clamp(18px, 3vw, 28px);
+}
+.quiz-side__title {
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.quiz-side__title span { font-weight: 500; letter-spacing: 0; text-transform: none; }
+.quiz-side ul { list-style: none; display: grid; gap: 12px; margin-top: 14px; }
+.quiz-side li {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 8px;
+  align-items: start;
+  font-size: .84rem;
+  color: var(--ink-2);
+  line-height: 1.35;
+}
+.quiz-side li b {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--rust);
+  line-height: 1.05;
+}
+.quiz-side__ru { display: block; }
+.quiz-side__zh { display: block; margin-top: 2px; font-size: .72rem; color: var(--ink-3); }
+.quiz-side__note {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--line);
+  font-size: .78rem;
+  line-height: 1.55;
+  color: var(--ink-3);
+}
+
+.mode-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.mode-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "ru detail"
+    "desc detail";
+  gap: 2px 14px;
+  align-items: center;
+  padding: 13px 16px;
+  border: 1.5px solid var(--line);
+  border-radius: 14px;
+  background: var(--card);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color .2s, box-shadow .2s, transform .2s, background-color .2s;
+}
+.mode-card:hover { border-color: var(--ink-2); transform: translateY(-2px); }
+.mode-card[aria-pressed="true"] {
+  border-color: var(--ink);
+  background: var(--card);
+  box-shadow: inset 0 0 0 1px var(--ink);
+}
+.mode-card__ru { grid-area: ru; font-weight: 700; font-size: .97rem; }
+.mode-card__zh { font-size: .73rem; color: var(--ink-3); letter-spacing: .04em; font-weight: 500; }
+.mode-card__desc { grid-area: desc; font-size: .79rem; color: var(--ink-2); line-height: 1.45; }
+.mode-card__detail {
+  grid-area: detail;
+  font-size: .66rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--rust);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.quiz-start__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+.quiz-best { font-size: .82rem; color: var(--ink-3); }
+.quiz-best b { color: var(--forest); }
+.quiz-hint {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--line);
+  font-size: .78rem;
+  color: var(--ink-3);
+}
+
+.quiz-hud {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: .8rem;
+  color: var(--ink-2);
+  font-weight: 600;
+}
+.quiz-hud b { color: var(--ink); }
+.hud-bar {
+  flex: 1;
+  height: 8px;
+  border-radius: 99px;
+  background: var(--line-2);
+  overflow: hidden;
+}
+.hud-bar span {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--rust), var(--gold));
+  transition: width .35s var(--ease);
+}
+.hud-score { color: var(--forest); white-space: nowrap; }
+
+.quiz-question { margin-top: 22px; }
+.quiz-question:focus { outline: none; }
+.q-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: .7rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 700;
+}
+.q-meta span:first-child { color: var(--rust); }
+.q-stem { margin-top: 10px; font-size: 1rem; color: var(--ink-2); }
+.q-prompt {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 6px;
+  font-size: clamp(1.55rem, 4vw, 2.3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -.02em;
+}
+.q-prompt .q-zh { font-size: clamp(1.5rem, 4vw, 2.2rem); }
+.q-sentence {
+  font-size: clamp(1.1rem, 2.4vw, 1.35rem);
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: 0;
+  max-width: 46ch;
+}
+.blank {
+  display: inline-block;
+  width: 3.2em;
+  border-bottom: 3px solid var(--rust);
+  vertical-align: baseline;
+  transform: translateY(-2px);
+  margin-left: .18em;
+}
+
+.q-media {
+  width: min(300px, 64%);
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  background: var(--g-tint);
+  border: 1px solid var(--line-2);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.q-media .ic { width: 100%; height: 100%; }
+
+.q-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  padding: .35em .75em;
+  border: 1px dashed var(--line);
+  border-radius: 999px;
+  background: transparent;
+  font-size: .75rem;
+  color: var(--ink-3);
+  cursor: pointer;
+}
+.q-hint:hover { border-color: var(--ink-2); color: var(--ink); }
+.q-hint-text { margin-top: 8px; font-size: .88rem; color: var(--ink-2); }
+
+.q-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  padding: 13px 15px;
+  border: 1.5px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--ink);
+  font-size: .97rem;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color .18s, background-color .18s, transform .18s;
+}
+.option:hover:not(:disabled) { border-color: var(--ink-2); transform: translateY(-1px); }
+.option__key {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  display: grid;
+  place-items: center;
+  font-size: .7rem;
+  font-weight: 700;
+  color: var(--ink-3);
+  flex: none;
+}
+.option__key .ic { width: 14px; height: 14px; }
+.option:disabled { cursor: default; }
+.option.is-dim { opacity: .5; }
+.option.is-correct { border-color: var(--forest); background: var(--forest-tint); }
+.option.is-correct .option__key { background: var(--forest); border-color: var(--forest); color: #fff; }
+.option.is-wrong { border-color: #B23A2A; background: #FBEDE9; }
+.option.is-wrong .option__key { background: #B23A2A; border-color: #B23A2A; color: #fff; }
+
+.q-feedback { margin-top: 18px; }
+
+.feedback {
+  display: flex;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border-left: 5px solid var(--line);
+  background: var(--card);
+  font-size: .9rem;
+  line-height: 1.6;
+  color: var(--ink-2);
+  animation: fadeUp .3s var(--ease);
+}
+.feedback__icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex: none;
+  color: #fff;
+}
+.feedback__icon .ic { width: 15px; height: 15px; }
+.feedback--ok { border-left-color: var(--forest); background: #EDF5F0; }
+.feedback--ok .feedback__icon { background: var(--forest); }
+.feedback--bad { border-left-color: #B23A2A; background: #FBEDE9; }
+.feedback--bad .feedback__icon { background: #B23A2A; }
+.feedback b { color: var(--ink); }
+.feedback__title { display: block; font-size: .93rem; margin-bottom: 3px; color: var(--ink); }
+.feedback__full {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed rgba(24, 35, 30, .12);
+  font-size: .85rem;
+}
+.feedback__full span {
+  display: block;
+  margin-top: 4px;
+  color: var(--ink-3);
+  line-height: 1.55;
+}
+
+.q-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 18px;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Результат */
+.quiz-result { animation: fadeUp .35s var(--ease); }
+.quiz-result:focus { outline: none; }
+.result-head {
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 4vw, 36px);
+  flex-wrap: wrap;
+}
+.score-ring {
+  --p: 0;
+  --ring: var(--forest);
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  background: conic-gradient(var(--ring) calc(var(--p) * 1%), var(--line-2) 0);
+  display: grid;
+  place-items: center;
+  position: relative;
+  flex: none;
+}
+.score-ring::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border-radius: 50%;
+  background: var(--paper-2);
+}
+.score-ring__val { position: relative; z-index: 1; text-align: center; line-height: 1; }
+.score-ring__val b { display: block; font-family: var(--font-serif); font-size: 2.2rem; font-weight: 600; }
+.score-ring__val span { display: block; margin-top: 4px; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+
+.result-copy { flex: 1 1 300px; }
+.result-copy h3 { font-family: var(--font-serif); font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 600; line-height: 1.15; }
+.result-copy p { margin-top: 8px; font-size: .93rem; color: var(--ink-2); }
+.result-stats { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 14px; }
+.result-stats div { display: flex; flex-direction: column; }
+.result-stats b { font-family: var(--font-serif); font-size: 1.35rem; font-weight: 600; }
+.result-stats span { font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+
+.result-list { margin-top: 26px; display: grid; gap: 8px; }
+.result-list h4 { font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 2px; }
+.result-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 13px;
+  border-radius: 10px;
+  border: 1px solid var(--line-2);
+  background: var(--card);
+  font-size: .87rem;
+  line-height: 1.5;
+}
+.result-item__icon {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex: none;
+  color: #fff;
+  margin-top: 1px;
+}
+.result-item__icon .ic { width: 13px; height: 13px; }
+.result-item--ok .result-item__icon { background: var(--forest); }
+.result-item--bad .result-item__icon { background: #B23A2A; }
+.result-item__body { min-width: 0; }
+.result-item__q { color: var(--ink); font-weight: 600; }
+.result-item__a { color: var(--ink-3); font-size: .82rem; margin-top: 3px; }
+.result-item__a b { color: var(--forest); font-weight: 600; }
+.result-item__a .muted {
+  display: inline-block;
+  margin-right: 4px;
+  font-size: .68rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.result-item__a .muted::after { content: " ·"; }
+
+.result-copy h3 [lang="zh-CN"] {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--font-sans);
+  font-size: .5em;
+  font-weight: 500;
+  letter-spacing: .04em;
+  color: var(--ink-3);
+}
+
+.result-thumb {
+  display: inline-grid;
+  place-items: center;
+  width: 48px;
+  height: 38px;
+  border-radius: 8px;
+  background: var(--g-tint);
+  border: 1px solid var(--line-2);
+  overflow: hidden;
+  vertical-align: middle;
+  margin-right: 9px;
+  flex: none;
+}
+.result-thumb .ic { width: 100%; height: 100%; }
+.result-item__q { display: flex; align-items: center; gap: 2px; }
+
+.result-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.result-best { margin-top: 12px; font-size: .8rem; color: var(--ink-3); }
+
+/* ---------- 13. О проекте и подвал ---------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.about-card {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--card);
+}
+.about-card h3 {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 10px;
+}
+.about-card h3 span { color: var(--ink-3); font-weight: 600; letter-spacing: .02em; }
+.about-card p { font-size: .92rem; color: var(--ink-2); }
+.about-card__ru { margin-top: 8px; font-size: .85rem !important; color: var(--ink-3) !important; }
+
+.sources {
+  margin-top: clamp(30px, 4vw, 46px);
+  padding: clamp(20px, 3vw, 30px);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+}
+.sources h3 { font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); }
+.sources h3 span { text-transform: none; letter-spacing: 0; color: var(--ink-3); font-weight: 500; }
+.sources p { margin-top: 10px; font-size: .88rem; color: var(--ink-2); }
+.sources ul { margin-top: 10px; padding-left: 18px; display: grid; gap: 6px; }
+.sources li { font-size: .86rem; color: var(--ink-2); }
+.sources-note { font-size: .8rem !important; color: var(--ink-3) !important; }
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: var(--paper-2);
+  padding: clamp(28px, 4vw, 44px) 0;
+}
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.2fr auto;
+  gap: 18px 32px;
+  align-items: start;
+}
+.footer-title { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 600; }
+.footer-sub { margin-top: 4px; font-size: .82rem; color: var(--ink-3); }
+.footer-nav { display: flex; flex-wrap: wrap; gap: 14px; }
+.footer-nav a { font-size: .84rem; color: var(--ink-2); text-decoration: none; }
+.footer-nav a:hover { color: var(--ink); text-decoration: underline; }
+.footer-note {
+  grid-column: 1 / -1;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-size: .78rem;
+  color: var(--ink-3);
+}
+
+/* ---------- 14. Появление при прокрутке ---------- */
+.reveal { opacity: 0; transform: translateY(18px); }
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+  transition: opacity .65s var(--ease), transform .65s var(--ease);
+}
+
+/* ---------- 15. Адаптивность ---------- */
+@media (max-width: 1080px) {
+  html { scroll-padding-top: 120px; }
+  .header-inner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4px 14px;
+    padding-block: 8px 0;
+  }
+  .brand { order: 1; }
+  .header-tools { order: 2; margin-left: auto; }
+  .nav {
+    order: 3;
+    width: 100%;
+    margin-inline: 0;
+    gap: 3px;
+    padding: 7px 0 8px;
+    border-top: 1px solid rgba(226, 216, 198, .8);
+  }
+  .nav a { padding: .32em .58em; font-size: .8rem; }
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-art { max-width: 640px; }
+  .field { grid-template-columns: 1fr; }
+  .field-core { min-height: 0; }
+  .field-core__note { margin-top: 12px; }
+}
+
+@media (max-width: 860px) {
+  .quiz-start__grid { grid-template-columns: 1fr; }
+  .quiz-side {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding-left: 0;
+    padding-top: 18px;
+  }
+  .hero-meta li { padding-right: 18px; margin-right: 18px; }
+  .learn-progress { margin-left: 0; width: 100%; }
+  .q-options { grid-template-columns: 1fr; }
+  .line { max-width: 100%; }
+  .footer-inner { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  html { font-size: 15.5px; }
+  html[data-fs="lg"] { font-size: 17px; }
+  html[data-fs="xl"] { font-size: 18.5px; }
+  .wrap { width: min(100% - 32px, var(--maxw)); }
+  .header-cta { display: none; }
+  .header-inner { min-height: 62px; }
+  .brand__text span { display: none; }
+  .hero { padding-top: 26px; }
+  .hero-title__ru { font-size: clamp(2.7rem, 14vw, 4rem); }
+  .hero-meta { gap: 12px 0; }
+  .hero-meta li { flex: 1 1 40%; padding-right: 0; margin-right: 0; border-right: 0; }
+  .hero-meta b { font-size: 1.3rem; }
+  .word-grid { grid-template-columns: 1fr; }
+  .search { max-width: none; }
+  .filters {
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .filters::-webkit-scrollbar { display: none; }
+  .filter-chip { flex: none; }
+  .dialogue-controls { width: 100%; }
+  .dialogue-controls .btn { flex: 1 1 auto; }
+  .dialogue-controls #play-dialogue { flex: 1 1 100%; }
+  .check-opts { grid-template-columns: 1fr; }
+  .line { gap: 8px; }
+  .avatar { width: 34px; height: 34px; font-size: .82rem; }
+  .bubble { padding: 11px 13px; }
+  .bubble__ru { font-size: .95rem; }
+  .dialogue__intro { font-size: .9rem; }
+  .reader { padding: 20px 18px; }
+  .check { padding: 18px 16px; }
+  .quiz-shell { border-radius: 20px; padding: 18px 15px; }
+  .score-ring { width: 120px; height: 120px; }
+  .score-ring__val b { font-size: 1.8rem; }
+  .result-head { gap: 18px; }
+  .extras-table { min-width: 540px; }
+  .gloss__tip { white-space: normal; width: max-content; max-width: 220px; }
+}
+
+@media (max-width: 400px) {
+  .word-card__ru { font-size: 1.3rem; }
+  .filter-chip { font-size: .74rem; padding: .4em .7em; }
+}
+
+/* ---------- 16. Доступность и печать ---------- */
+@media (max-width: 760px) {
+  .about-grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
+
+@media print {
+  .site-header,
+  .scroll-progress,
+  .dialogue-controls,
+  .quiz-shell,
+  .skip-link,
+  .hero-actions,
+  .vocab-toolbar,
+  .footer-nav,
+  .speak,
+  .learn-btn { display: none !important; }
+  body { background: #fff; color: #000; }
+  .section { padding: 18px 0; border-top: 1px solid #ddd; }
+  .word-card, .colloc, .reader, .dialogue, .check { break-inside: avoid; box-shadow: none; }
+  .section--quiz { display: none; }
+  .reader .para__zh { display: block; }
+}
+
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Перейти к содержанию · 跳到正文</a>
+<noscript><p class="noscript">Для словаря, теста и озвучивания нужен JavaScript. <span lang="zh-CN">词典、测试和朗读功能需要启用 JavaScript。</span></p></noscript>
+<div class="scroll-progress" aria-hidden="true"><span id="scroll-bar"></span></div>
+
+<!-- ================= Шапка ================= -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Торговля — на главную">
+      <span class="brand__mark" aria-hidden="true"><svg class="ic"><use href="#ui-tag"></use></svg></span>
+      <span class="brand__text">
+        <b>Торговля</b>
+        <span>贸易 · A2–B1</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Разделы сайта">
+      <a href="#group">Группа</a>
+      <a href="#vocab">Словарь</a>
+      <a href="#colloc">Сочетания</a>
+      <a href="#dialogue">Диалог</a>
+      <a href="#text">Текст</a>
+      <a href="#quiz">Тест</a>
+      <a href="#about">О проекте</a>
+    </nav>
+
+    <div class="header-tools">
+      <div class="font-controls" role="group" aria-label="Размер текста">
+        <button type="button" data-font="dec" aria-label="Уменьшить текст">A−</button>
+        <button type="button" data-font="inc" aria-label="Увеличить текст">A+</button>
+      </div>
+      <a class="btn btn--primary btn--sm header-cta" href="#quiz">Пройти тест</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= Первый экран ================= -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="eyebrow__dot" aria-hidden="true"></span>
+          Русский язык · РКИ · A2–B1
+          <span class="eyebrow__zh" lang="zh-CN">面向中文母语学习者</span>
+        </p>
+        <h1 class="hero-title">
+          <span class="hero-title__ru" lang="ru">Торговля</span>
+          <span class="hero-title__zh" lang="zh-CN">贸易</span>
+        </h1>
+        <p class="hero-sub" lang="ru">Тематическая группа «Торговля» в современном русском языке</p>
+        <p class="lead" lang="ru">30 слов с картинками и переводом, устойчивые сочетания, диалог и текст, интерактивный тест с мгновенной проверкой — всё на одной странице.</p>
+        <p class="lead lead--zh" lang="zh-CN">面向中文母语者的俄语贸易主题学习网站：单词、搭配、对话、短文与即时评分测试。</p>
+
+        <div class="hero-actions">
+          <a class="btn btn--primary btn--lg" href="#vocab">
+            Открыть словарь
+            <svg class="ic ic--sm" aria-hidden="true"><use href="#ui-arrow"></use></svg>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#quiz">Пройти тест</a>
+        </div>
+
+        <ul class="hero-meta">
+          <li><b>30</b><span>слов · 词</span></li>
+          <li><b>12</b><span>сочетаний · 搭配</span></li>
+          <li><b>16</b><span>реплик · 对话</span></li>
+          <li><b>10</b><span>вопросов · 题</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-art">
+        <div class="hero-art__frame" aria-hidden="true" id="hero-art"></div>
+        <p class="hero-art__caption">Все иллюстрации нарисованы для этого сайта <span lang="zh-CN">· 全部插图为本网站手绘</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 01. Группа ================= -->
+  <section class="section" id="group" aria-labelledby="group-title">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-num">01 · Лексика</p>
+        <h2 class="section-title" id="group-title">Группа «Торговля»: пять подгрупп</h2>
+        <p class="section-lead" lang="ru">Слова тематической группы называют участников, места, товары, цены, действия и документы. Внутри группы — пять смысловых подгрупп: нажмите на любую, чтобы сразу перейти к её словам.</p>
+        <p class="section-lead section-lead--zh" lang="zh-CN">「贸易」主题组的词涵盖参与者、场所、商品、价格、行为和文件。组内分为五个语义子组，点击任意一个即可查看对应的词汇。</p>
+      </header>
+
+      <div class="field" id="field"></div>
+
+      <div class="note-block">
+        <h3>Как устроена группа <span lang="zh-CN">· 这一组词是怎么组织的</span></h3>
+        <ul>
+          <li lang="ru"><b>Ядро</b> — слово «торго́вля» и его производные: <i>торгова́ть, торго́вый, торго́вец</i>. <span class="note-zh" lang="zh-CN">核心词是 торговля 及其派生词。</span></li>
+          <li lang="ru"><b>Периферия</b> — заимствования и неологизмы: <i>марке́тинг, бренд, логи́стика, онла́йн-магази́н</i>. <span class="note-zh" lang="zh-CN">外围是借词和网络时代的新词。</span></li>
+          <li lang="ru"><b>Связи внутри группы</b> — антонимы (<i>о́птом ↔ в ро́зницу</i>), синонимы (<i>цена́ — сто́имость</i>), сочетаемость (<i>сде́лать ски́дку, заключи́ть догово́р</i>). <span class="note-zh" lang="zh-CN">组内还有反义、同义和固定搭配关系。</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 02. Словарь ================= -->
+  <section class="section" id="vocab" aria-labelledby="vocab-title">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-num">02 · Словарь</p>
+        <h2 class="section-title" id="vocab-title">30 слов с картинками</h2>
+        <p class="section-lead" lang="ru">Ударение, часть речи, перевод, пример с переводом и комментарий о том, как слово ведёт себя в речи. Нажмите на динамик, чтобы услышать слово и пример, и отметьте карточку как выученную.</p>
+        <p class="section-lead section-lead--zh" lang="zh-CN">每个词都有重音、词性、中文释义、例句与用法提示；点击喇叭可听发音，勾选即标记为“已学会”。</p>
+      </header>
+
+      <div class="vocab-toolbar">
+        <label class="search">
+          <svg class="ic ic--sm" aria-hidden="true"><use href="#ui-search"></use></svg>
+          <input type="search" id="vocab-search" placeholder="Поиск: слово, перевод, пример… / 搜索" autocomplete="off" aria-label="Поиск по словарю">
+        </label>
+        <div class="filters" id="vocab-filters" role="group" aria-label="Фильтр по подгруппам"></div>
+        <div class="learn-progress">
+          <span class="learn-progress__label">Выучено <b id="learned-count">0</b>/<span id="learned-total">30</span></span>
+          <span class="progress-track" aria-hidden="true"><span class="progress-fill" id="learned-fill"></span></span>
+        </div>
+      </div>
+
+      <div class="word-grid" id="word-grid"></div>
+      <p class="empty-state" id="vocab-empty" hidden>Ничего не найдено. Попробуйте другое слово. <span lang="zh-CN">没有找到，换个词试试。</span></p>
+    </div>
+  </section>
+
+  <!-- ================= 03. Сочетания ================= -->
+  <section class="section" id="colloc" aria-labelledby="colloc-title">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-num">03 · Сочетания</p>
+        <h2 class="section-title" id="colloc-title">12 сочетаний, без которых не обойтись</h2>
+        <p class="section-lead" lang="ru">Готовая «упаковка» для слов: сочетания, которые носители языка используют постоянно — в магазине, в офисе и в новостях.</p>
+        <p class="section-lead section-lead--zh" lang="zh-CN">母语者高频使用的固定搭配，背下来就能直接用于购物、商务和新闻阅读。</p>
+      </header>
+      <div class="colloc-grid" id="colloc-grid"></div>
+
+      <div class="extras">
+        <h3>Ещё 10 слов <span lang="zh-CN">· 补充词汇</span></h3>
+        <div class="table-wrap">
+          <table class="extras-table">
+            <thead>
+              <tr>
+                <th scope="col">Слово</th>
+                <th scope="col">词性</th>
+                <th scope="col">Перевод</th>
+                <th scope="col">Пример</th>
+              </tr>
+            </thead>
+            <tbody id="extras-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 04. Диалог ================= -->
+  <section class="section" id="dialogue" aria-labelledby="dialogue-title">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-num">04 · Диалог</p>
+        <h2 class="section-title" id="dialogue-title">На Измайловском рынке</h2>
+        <p class="section-lead" lang="ru">Покупка на Измайловском рынке в Москве: цена, скидка, оплата картой, чек. Перевод можно скрыть, если хотите проверить себя.</p>
+        <p class="section-lead section-lead--zh" lang="zh-CN">莫斯科伊兹迈洛沃市场的购物对话：价格、折扣、刷卡、收据。可以隐藏中文译文来自我检测。</p>
+      </header>
+
+      <div class="dialogue" id="dialogue">
+        <div class="dialogue-head">
+          <div class="dialogue-meta">
+            <span class="chip chip--place"><span aria-hidden="true">📍</span> <span id="dialogue-place"></span></span>
+            <span class="chip" id="dialogue-level"></span>
+            <span class="chip chip--soft" lang="zh-CN">中文翻译可隐藏</span>
+          </div>
+          <div class="dialogue-controls">
+            <button class="btn btn--dark btn--sm" id="play-dialogue" type="button" aria-pressed="false">
+              <svg class="ic ic--sm" aria-hidden="true"><use href="#ui-play"></use></svg>
+              <span>Прослушать диалог</span>
+            </button>
+            <button class="btn btn--ghost btn--sm" id="toggle-dialogue-zh" type="button" aria-pressed="true">
+              <svg class="ic ic--sm" aria-hidden="true"><use href="#ui-translate"></use></svg>
+              <span>中文翻译</span>
+            </button>
+            <button class="btn btn--ghost btn--sm" id="toggle-stress" type="button" aria-pressed="true">Ударения</button>
+          </div>
+        </div>
+
+        <p class="dialogue-intro" lang="ru" id="dialogue-intro"></p>
+        <p class="dialogue-intro dialogue-intro--zh" lang="zh-CN" id="dialogue-intro-zh"></p>
+
+        <div class="lines" id="dialogue-lines"></div>
+
+        <div class="glossary" id="dialogue-gloss"></div>
+        <p class="tts-note" id="tts-note" hidden>Не удалось запустить озвучивание. Установите русский голос в системе или откройте сайт в другом браузере. <span lang="zh-CN">无法启动语音朗读：请在系统中安装俄语语音包，或换用其他浏览器。</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 05. Текст ================= -->
+  <section class="section" id="text" aria-labelledby="text-title">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-num">05 · Текст</p>
+        <h2 class="section-title" id="text-title">Читаем: торговля сегодня</h2>
+        <p class="section-lead" lang="ru">Небольшой текст уровня B1 о том, как меняется торговля. Наведите курсор на подчёркнутое слово — появится перевод.</p>
+        <p class="section-lead section-lead--zh" lang="zh-CN">一篇 B1 水平的短文，讲述贸易如何变化。鼠标悬停在带下划线的词上可看中文释义。</p>
+      </header>
+
+      <div class="reader" id="reader">
+        <div class="reader-head">
+          <div>
+            <h3 lang="ru" id="reader-title"></h3>
+            <p class="reader-title-zh" lang="zh-CN" id="reader-title-zh"></p>
+          </div>
+          <div class="reader-controls">
+            <span class="chip" id="reader-level"></span>
+            <button class="btn btn--ghost btn--sm" id="toggle-text-zh" type="button" aria-pressed="false">
+              <svg class="ic ic--sm" aria-hidden="true"><use href="#ui-translate"></use></svg>
+              <span>Показать перевод</span>
+            </button>
+          </div>
+        </div>
+        <div class="reader-body" id="reader-body"></div>
+        <div class="reader-gloss" id="reader-gloss"></div>
+      </div>
+
+      <div class="check" id="text-check">
+        <div class="check-head">
+          <h3>Проверьте понимание <span lang="zh-CN">· 理解检测</span></h3>
+          <p class="check-score" id="check-score" aria-live="polite"></p>
+        </div>
+        <div id="check-questions"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 06. Тест ================= -->
+  <section class="section section--quiz" id="quiz" aria-labelledby="quiz-title">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-num">06 · Тест</p>
+        <h2 class="section-title" id="quiz-title">Интерактивный тест</h2>
+        <p class="section-lead" lang="ru">10 вопросов: значение слова, картинка и контекст. Ответ проверяется сразу, в конце — результат, разбор ошибок и возможность пройти только их.</p>
+        <p class="section-lead section-lead--zh" lang="zh-CN">每次 10 题：词义、图片与语境。每题作答后立即判分并显示解析，结束时给出总分和错题回顾。</p>
+      </header>
+
+      <div class="quiz-shell" id="quiz-shell">
+        <div class="quiz-start" id="quiz-start">
+          <div class="quiz-start__grid">
+            <div class="quiz-start__main">
+              <div class="quiz-start__head">
+                <p class="quiz-kicker">Тест · 测验</p>
+                <h3>Проверьте, как вы запомнили слова</h3>
+                <p lang="zh-CN">选择模式，然后开始答题。题目会随机组合，重复练习不会完全一样。</p>
+              </div>
+              <div class="mode-cards" id="quiz-modes" role="group" aria-label="Режим теста"></div>
+              <div class="quiz-start__actions">
+                <button class="btn btn--primary btn--lg" id="quiz-begin" type="button">
+                  Начать тест
+                  <svg class="ic ic--sm" aria-hidden="true"><use href="#ui-play"></use></svg>
+                </button>
+                <p class="quiz-best" id="quiz-best"></p>
+              </div>
+              <p class="quiz-hint">Мгновенная проверка после каждого ответа <span lang="zh-CN">· 每题即时反馈</span></p>
+            </div>
+
+            <aside class="quiz-side" aria-label="О тесте">
+              <p class="quiz-side__title">Что внутри <span lang="zh-CN">· 内容</span></p>
+              <ul>
+                <li><b>30</b><span><span class="quiz-side__ru">слов словаря</span><span class="quiz-side__zh" lang="zh-CN">词汇</span></span></li>
+                <li><b>3</b><span><span class="quiz-side__ru">типа заданий</span><span class="quiz-side__zh" lang="zh-CN">题型</span></span></li>
+                <li><b>10</b><span><span class="quiz-side__ru">вопросов за попытку</span><span class="quiz-side__zh" lang="zh-CN">每次 10 题</span></span></li>
+                <li><b>∞</b><span><span class="quiz-side__ru">попыток</span><span class="quiz-side__zh" lang="zh-CN">不限次数</span></span></li>
+              </ul>
+              <p class="quiz-side__note">Вопросы выбираются заново при каждой попытке, поэтому второй раз тест не повторяет первый. <span lang="zh-CN">每次题目重新随机，第二次不会完全一样。</span></p>
+            </aside>
+          </div>
+        </div>
+
+        <div class="quiz-stage" id="quiz-stage" hidden></div>
+        <div class="quiz-result" id="quiz-result" hidden></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 07. О проекте ================= -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-num">07 · О проекте</p>
+        <h2 class="section-title" id="about-title">Кому, зачем и как</h2>
+        <p class="section-lead" lang="ru">Небольшой учебный сайт, который можно открыть без регистрации, сервера и интернета.</p>
+        <p class="section-lead section-lead--zh" lang="zh-CN">一个无需注册、无需服务器、离线也能打开的俄语学习小站。</p>
+      </header>
+
+      <div class="about-grid">
+        <article class="about-card">
+          <h3>Кому <span lang="zh-CN">· 适用对象</span></h3>
+          <p lang="zh-CN">中文母语的俄语学习者，水平 A2–B1：准备赴俄留学、旅游或从事商务，或备考 ТРКИ-1。</p>
+          <p class="about-card__ru" lang="ru">Студенты из Китая, изучающие русский язык на уровне A2–B1.</p>
+        </article>
+        <article class="about-card">
+          <h3>Как <span lang="zh-CN">· 学习方法</span></h3>
+          <p lang="zh-CN">先看图记词，再看搭配，然后在对话和短文中理解用法，最后用测试检验。每个词都给出中文注释，解释易混词和固定搭配。</p>
+          <p class="about-card__ru" lang="ru">От слова и картинки — к сочетанию, тексту и проверке.</p>
+        </article>
+        <article class="about-card">
+          <h3>Доступность <span lang="zh-CN">· 无障碍</span></h3>
+          <p lang="zh-CN">支持键盘操作，可放大字号（A−/A+），图片均有文字说明，动画会遵循系统的“减少动态效果”设置。</p>
+          <p class="about-card__ru" lang="ru">Сайт управляется с клавиатуры, размер текста меняется, анимации отключаются по настройке системы. Озвучивание использует синтез речи браузера — для русского голоса может понадобиться установка голосового пакета в системе.</p>
+        </article>
+        <article class="about-card">
+          <h3>Без интернета <span lang="zh-CN">· 离线可用</span></h3>
+          <p lang="zh-CN">没有外部字体、CDN 和图片：所有内容都在同一个文件夹里，断网也能用，打开速度快。</p>
+          <p class="about-card__ru" lang="ru">Никаких внешних шрифтов и картинок: все материалы лежат рядом с сайтом.</p>
+        </article>
+      </div>
+
+      <div class="sources">
+        <h3>Материалы и опоры <span lang="zh-CN">· 参考资料</span></h3>
+        <p>При отборе лексики и проверке значений использовались:</p>
+        <ul>
+          <li><a href="https://ruscorpora.ru" target="_blank" rel="noopener">Национальный корпус русского языка</a> — примеры употребления слов в современной речи.</li>
+          <li><a href="https://gramota.ru" target="_blank" rel="noopener">«Грамота.ру»</a> — словари и справочник по русскому языку.</li>
+          <li><a href="https://pushkin.institute" target="_blank" rel="noopener">Институт Пушкина</a> — материалы и уровни владения РКИ.</li>
+          <li>Толковый словарь С. И. Ожегова и Н. Ю. Шведовой — проверка значений слов.</li>
+          <li>Учебные комплексы РКИ «Дорога в Россию», «Поехали!» — ориентир по уровням A2–B1.</li>
+        </ul>
+        <p class="sources-note">Лексика отобрана по принципу тематической группы: ядро (торговля), участники и места, товар, цена, покупка, сделка. Иллюстрации нарисованы специально для сайта.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= Подвал ================= -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <p class="footer-title">Торговля · 贸易</p>
+      <p class="footer-sub">Учебный проект по РКИ для китайских студентов · A2–B1</p>
+    </div>
+    <nav class="footer-nav" aria-label="Навигация в подвале">
+      <a href="#vocab">Словарь</a>
+      <a href="#colloc">Сочетания</a>
+      <a href="#dialogue">Диалог</a>
+      <a href="#text">Текст</a>
+      <a href="#quiz">Тест</a>
+    </nav>
+    <p class="footer-note">Сайт работает без сервера и интернета: просто откройте этот файл в браузере. <span lang="zh-CN">无需服务器，直接打开这个文件即可使用。</span></p>
+  </div>
+</footer>
+
+<script>
+/* ==========================================================================
+   Иллюстрации сайта: 30 иконок словаря + сцена для первого экрана + UI-иконки.
+   Всё нарисовано вручную в SVG и встроено в документ — сайт не зависит
+   от внешних картинок и работает без интернета.
+   Цвета берутся из CSS-переменных (--g, --g-soft, --ink, --card), поэтому
+   одна и та же иконка подстраивается под цвет своей подгруппы.
+   ========================================================================== */
+window.ICONS = (function () {
+  'use strict';
+
+  var SPRITE =
+    '<svg id="icon-sprite" aria-hidden="true" focusable="false" ' +
+      'style="position:absolute;width:0;height:0;overflow:hidden;pointer-events:none">' +
+
+    /* ---------- 1. торговля: обмен товара --------------------------------- */
+    '<symbol id="ic-trade" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<path d="M72 70h168" stroke="var(--g)" stroke-width="11" stroke-linecap="round"/>' +
+      '<path d="M238 70l-24-14v28z" fill="var(--g)"/>' +
+      '<path d="M248 198H80" stroke="var(--g)" stroke-width="11" stroke-linecap="round"/>' +
+      '<path d="M82 198l24-14v28z" fill="var(--g)"/>' +
+      '<path d="M112 108l20-14h96l-20 14z" fill="var(--g)"/>' +
+      '<rect x="112" y="108" width="96" height="64" rx="5" fill="var(--ink)"/>' +
+      '<path d="M212 94l20-14v64l-20 14z" fill="var(--g-soft)"/>' +
+      '<rect x="152" y="94" width="12" height="78" fill="var(--card)" opacity=".92"/>' +
+      '<path d="M164 94h12l-12 14z" fill="var(--card)" opacity=".5"/>' +
+    '</symbol>' +
+
+    /* ---------- 2. рынок --------------------------------------------------- */
+    '<symbol id="ic-market" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<circle cx="94" cy="94" r="22" fill="var(--g)"/>' +
+      '<circle cx="138" cy="94" r="22" fill="var(--g)"/>' +
+      '<circle cx="182" cy="94" r="22" fill="var(--g)"/>' +
+      '<circle cx="226" cy="94" r="22" fill="var(--g)"/>' +
+      '<rect x="72" y="66" width="176" height="28" fill="var(--g)"/>' +
+      '<rect x="112" y="66" width="8" height="28" fill="var(--card)" opacity=".45"/>' +
+      '<rect x="156" y="66" width="8" height="28" fill="var(--card)" opacity=".45"/>' +
+      '<rect x="200" y="66" width="8" height="28" fill="var(--card)" opacity=".45"/>' +
+      '<rect x="82" y="94" width="9" height="94" fill="var(--ink)"/>' +
+      '<rect x="229" y="94" width="9" height="94" fill="var(--ink)"/>' +
+      '<rect x="96" y="132" width="54" height="28" rx="3" fill="var(--ink)"/>' +
+      '<path d="M96 140h54M96 150h54" stroke="var(--card)" stroke-width="2.5" opacity=".35"/>' +
+      '<circle cx="108" cy="126" r="7" fill="var(--g)"/>' +
+      '<circle cx="124" cy="126" r="7" fill="var(--g)"/>' +
+      '<circle cx="140" cy="126" r="7" fill="var(--g)"/>' +
+      '<rect x="168" y="136" width="50" height="24" rx="3" fill="var(--ink)"/>' +
+      '<circle cx="180" cy="131" r="6" fill="var(--g)"/>' +
+      '<circle cx="196" cy="131" r="6" fill="var(--g)"/>' +
+      '<circle cx="212" cy="131" r="6" fill="var(--g)"/>' +
+      '<rect x="68" y="160" width="184" height="14" rx="3" fill="var(--ink)"/>' +
+      '<rect x="76" y="174" width="168" height="30" fill="var(--g-soft)"/>' +
+      '<path d="M118 174v30M160 174v30M202 174v30" stroke="var(--ink)" stroke-width="2.5" opacity=".25"/>' +
+    '</symbol>' +
+
+    /* ---------- 3. магазин ------------------------------------------------- */
+    '<symbol id="ic-shop" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<rect x="86" y="58" width="148" height="130" rx="8" fill="var(--card)" stroke="var(--ink)" stroke-width="6"/>' +
+      '<rect x="116" y="44" width="88" height="20" rx="5" fill="var(--ink)"/>' +
+      '<rect x="130" y="51" width="34" height="6" rx="3" fill="var(--g)"/>' +
+      '<circle cx="94" cy="96" r="16" fill="var(--g)"/>' +
+      '<circle cx="126" cy="96" r="16" fill="var(--g)"/>' +
+      '<circle cx="158" cy="96" r="16" fill="var(--g)"/>' +
+      '<circle cx="190" cy="96" r="16" fill="var(--g)"/>' +
+      '<circle cx="222" cy="96" r="16" fill="var(--g)"/>' +
+      '<rect x="78" y="74" width="164" height="22" fill="var(--g)"/>' +
+      '<rect x="102" y="112" width="62" height="52" rx="4" fill="var(--g-tint)" stroke="var(--ink)" stroke-width="4"/>' +
+      '<path d="M102 138h62" stroke="var(--ink)" stroke-width="3.5"/>' +
+      '<circle cx="116" cy="127" r="6" fill="var(--g)"/>' +
+      '<rect x="128" y="121" width="10" height="10" rx="2" fill="var(--g)"/>' +
+      '<rect x="144" y="122" width="10" height="9" rx="2" fill="var(--g)"/>' +
+      '<circle cx="116" cy="150" r="6" fill="var(--g)"/>' +
+      '<rect x="128" y="144" width="22" height="11" rx="2" fill="var(--g)"/>' +
+      '<rect x="178" y="124" width="42" height="64" rx="3" fill="var(--ink)"/>' +
+      '<circle cx="186" cy="156" r="3.5" fill="var(--card)"/>' +
+      '<rect x="94" y="188" width="128" height="8" rx="4" fill="var(--ink)"/>' +
+    '</symbol>' +
+
+    /* ---------- 4. покупатель ---------------------------------------------- */
+    '<symbol id="ic-buyer" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<circle cx="146" cy="72" r="21" fill="var(--ink)"/>' +
+      '<rect x="116" y="98" width="58" height="76" rx="18" fill="var(--g)"/>' +
+      '<path d="M138 100l8 13 8-13z" fill="var(--card)"/>' +
+      '<rect x="168" y="116" width="12" height="38" rx="6" fill="var(--ink)"/>' +
+      '<path d="M186 130h70l-12 44h-46z" fill="var(--g-soft)" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/>' +
+      '<path d="M208 130c0-16 26-16 26 0" fill="none" stroke="var(--ink)" stroke-width="5"/>' +
+      '<path d="M206 144v22M220 144v22M234 144v22" stroke="var(--ink)" stroke-width="3" opacity=".4"/>' +
+      '<g transform="rotate(-8 91 150)">' +
+        '<rect x="74" y="128" width="34" height="44" rx="3" fill="var(--card)" stroke="var(--ink)" stroke-width="4"/>' +
+        '<path d="M82 140h18M82 150h18M82 160h12" stroke="var(--g)" stroke-width="3"/>' +
+      '</g>' +
+    '</symbol>' +
+
+    /* ---------- 5. продавец ------------------------------------------------ */
+    '<symbol id="ic-seller" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<circle cx="160" cy="82" r="20" fill="var(--ink)"/>' +
+      '<rect x="128" y="104" width="64" height="62" rx="18" fill="var(--g)"/>' +
+      '<rect x="142" y="122" width="36" height="44" rx="4" fill="var(--card)"/>' +
+      '<rect x="186" y="116" width="12" height="26" rx="6" fill="var(--ink)"/>' +
+      '<rect x="100" y="132" width="32" height="12" rx="6" fill="var(--ink)"/>' +
+      '<rect x="72" y="136" width="36" height="26" rx="3" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/>' +
+      '<path d="M80 144h20M80 152h12" stroke="var(--g)" stroke-width="3"/>' +
+      '<rect x="62" y="166" width="196" height="16" rx="4" fill="var(--ink)"/>' +
+      '<rect x="70" y="182" width="180" height="26" fill="var(--g-soft)"/>' +
+      '<path d="M112 182v26M160 182v26M208 182v26" stroke="var(--ink)" stroke-width="2.5" opacity=".25"/>' +
+    '</symbol>' +
+
+    /* ---------- 6. ярмарка ------------------------------------------------- */
+    '<symbol id="ic-fair" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<path d="M46 52Q160 86 274 50" fill="none" stroke="var(--ink)" stroke-width="3" opacity=".6"/>' +
+      '<path d="M62 59l14 2-6 24z" fill="var(--g)"/>' +
+      '<path d="M108 67l14 1-6 24z" fill="var(--ink)"/>' +
+      '<path d="M150 71l14 1-5 24z" fill="var(--g)"/>' +
+      '<path d="M194 67l14-1-7 24z" fill="var(--ink)"/>' +
+      '<path d="M238 59l14-2-8 24z" fill="var(--g)"/>' +
+      '<path d="M56 178l46-72 46 72z" fill="var(--g)"/>' +
+      '<path d="M88 178l14-22 14 22z" fill="var(--card)" opacity=".85"/>' +
+      '<path d="M102 106v-16" stroke="var(--ink)" stroke-width="3"/>' +
+      '<path d="M102 90l20 6-20 6z" fill="var(--g)"/>' +
+      '<path d="M172 178l52-80 52 80z" fill="var(--ink)"/>' +
+      '<path d="M208 178l16-24 16 24z" fill="var(--card)" opacity=".8"/>' +
+      '<path d="M224 98v-16" stroke="var(--ink)" stroke-width="3"/>' +
+      '<path d="M224 82l20 6-20 6z" fill="var(--g)"/>' +
+      '<rect x="42" y="178" width="236" height="10" rx="5" fill="var(--ink)"/>' +
+    '</symbol>' +
+
+    /* ---------- 7. товар --------------------------------------------------- */
+    '<symbol id="ic-goods" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<path d="M112 108l32-20h128l-32 20z" fill="var(--g)"/>' +
+      '<path d="M240 108l32-20v72l-32 20z" fill="var(--g-soft)"/>' +
+      '<rect x="112" y="108" width="128" height="72" rx="4" fill="var(--ink)"/>' +
+      '<rect x="168" y="108" width="14" height="72" fill="var(--card)" opacity=".9"/>' +
+      '<path d="M200 88h14l-32 20h-14z" fill="var(--card)" opacity=".9"/>' +
+      '<rect x="126" y="124" width="34" height="24" rx="2" fill="var(--card)"/>' +
+      '<path d="M132 132h20M132 140h12" stroke="var(--g)" stroke-width="3"/>' +
+      '<path d="M126 156v14M132 156v14M139 156v14M147 156v14M154 156v14" stroke="var(--card)" stroke-width="3" opacity=".85"/>' +
+    '</symbol>' +
+
+    /* ---------- 8. продукт ------------------------------------------------- */
+    '<symbol id="ic-food" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<path d="M112 138c0-32 96-32 96 0" fill="none" stroke="var(--ink)" stroke-width="5"/>' +
+      '<rect x="206" y="94" width="26" height="44" rx="6" fill="var(--card)" stroke="var(--ink)" stroke-width="4"/>' +
+      '<rect x="212" y="84" width="14" height="12" rx="3" fill="var(--g)"/>' +
+      '<ellipse cx="164" cy="126" rx="34" ry="18" fill="var(--ink)"/>' +
+      '<path d="M146 120h36M150 130h28" stroke="var(--card)" stroke-width="3" opacity=".65"/>' +
+      '<circle cx="116" cy="120" r="20" fill="var(--g)"/>' +
+      '<path d="M116 100c0-8 6-12 12-12" fill="none" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>' +
+      '<path d="M82 138h156l-16 60H98z" fill="var(--g-soft)" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/>' +
+      '<path d="M118 152v32M146 152v32M174 152v32M202 152v32" stroke="var(--ink)" stroke-width="3" opacity=".35"/>' +
+      '<path d="M98 170h124" stroke="var(--ink)" stroke-width="3" opacity=".25"/>' +
+    '</symbol>' +
+
+    /* ---------- 9. одежда -------------------------------------------------- */
+    '<symbol id="ic-clothes" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<path d="M160 80c0-12 14-13 14-4" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>' +
+      '<path d="M160 80l-40 18M160 80l40 18" stroke="var(--ink)" stroke-width="5"/>' +
+      '<path d="M120 98h80" stroke="var(--ink)" stroke-width="5"/>' +
+      '<path d="M128 100L94 118 80 140 104 154 122 140 122 190Q122 198 130 198H190Q198 198 198 190V140L216 154 240 140 226 118 192 100Q176 116 160 116Q144 116 128 100Z" ' +
+        'fill="var(--g)" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/>' +
+      '<path d="M122 172h76" stroke="var(--card)" stroke-width="9" opacity=".55"/>' +
+      '<path d="M160 116v56" stroke="var(--card)" stroke-width="3" opacity=".4"/>' +
+    '</symbol>' +
+
+    /* ---------- 10. обувь -------------------------------------------------- */
+    '<symbol id="ic-shoes" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<ellipse cx="160" cy="197" rx="86" ry="7" fill="var(--ink)" opacity=".1"/>' +
+      '<g transform="translate(62,-34)" opacity=".95">' +
+        '<path d="M62 166C62 146 74 136 94 134L132 130C146 128 156 120 168 120C182 120 190 132 192 146L194 166Z" ' +
+          'fill="var(--g-soft)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>' +
+        '<rect x="56" y="164" width="144" height="22" rx="11" fill="var(--ink)"/>' +
+      '</g>' +
+      '<path d="M62 166C62 146 74 136 94 134L132 130C146 128 156 120 168 120C182 120 190 132 192 146L194 166Z" ' +
+        'fill="var(--g)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>' +
+      '<rect x="56" y="164" width="144" height="22" rx="11" fill="var(--ink)"/>' +
+      '<path d="M64 168h128" stroke="var(--card)" stroke-width="3" opacity=".35"/>' +
+      '<path d="M108 142l12 8M120 138l12 8M132 134l11 8" stroke="var(--card)" stroke-width="3.5" stroke-linecap="round"/>' +
+      '<path d="M80 166c3-11 9-18 18-21" stroke="var(--ink)" stroke-width="3" opacity=".3" fill="none"/>' +
+    '</symbol>' +
+
+    /* ---------- 11. сувенир ------------------------------------------------ */
+    '<symbol id="ic-souvenir" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<path d="M240 130c15 0 25 12 25 26 0 18-11 26-25 26s-25-8-25-26c0-14 10-26 25-26z" fill="var(--g-soft)"/>' +
+      '<circle cx="240" cy="124" r="12" fill="var(--g-soft)"/>' +
+      '<path d="M160 60c20 0 36 14 36 32 0 9-5 14 0 24 12 22 18 42 10 58-7 14-26 20-46 20s-39-6-46-20c-8-16-2-36 10-58 5-10 0-15 0-24 0-18 16-32 36-32z" fill="var(--g)"/>' +
+      '<ellipse cx="160" cy="96" rx="22" ry="24" fill="var(--card)"/>' +
+      '<path d="M120 94Q160 56 200 94L192 108Q160 78 128 108Z" fill="var(--ink)"/>' +
+      '<circle cx="151" cy="100" r="3" fill="var(--ink)"/>' +
+      '<circle cx="169" cy="100" r="3" fill="var(--ink)"/>' +
+      '<path d="M154 110q6 5 12 0" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>' +
+      '<circle cx="136" cy="108" r="5" fill="var(--g)" opacity=".45"/>' +
+      '<circle cx="184" cy="108" r="5" fill="var(--g)" opacity=".45"/>' +
+      '<circle cx="160" cy="150" r="9" fill="var(--card)" opacity=".9"/>' +
+      '<circle cx="136" cy="166" r="6" fill="var(--card)" opacity=".6"/>' +
+      '<circle cx="184" cy="166" r="6" fill="var(--card)" opacity=".6"/>' +
+      '<circle cx="160" cy="176" r="5" fill="var(--card)" opacity=".5"/>' +
+      '<ellipse cx="160" cy="212" rx="52" ry="7" fill="var(--ink)" opacity=".12"/>' +
+    '</symbol>' +
+
+    /* ---------- 12. упаковка ----------------------------------------------- */
+    '<symbol id="ic-pack" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<g transform="rotate(-8 98 127)">' +
+        '<rect x="52" y="96" width="92" height="62" rx="6" fill="var(--card)" stroke="var(--ink)" stroke-width="4"/>' +
+        '<g fill="var(--g-soft)">' +
+          '<circle cx="70" cy="112" r="4"/><circle cx="90" cy="112" r="4"/><circle cx="110" cy="112" r="4"/><circle cx="128" cy="112" r="4"/>' +
+          '<circle cx="70" cy="128" r="4"/><circle cx="90" cy="128" r="4"/><circle cx="110" cy="128" r="4"/><circle cx="128" cy="128" r="4"/>' +
+          '<circle cx="70" cy="144" r="4"/><circle cx="90" cy="144" r="4"/><circle cx="110" cy="144" r="4"/><circle cx="128" cy="144" r="4"/>' +
+        '</g>' +
+      '</g>' +
+      '<rect x="120" y="112" width="124" height="86" rx="6" fill="var(--g-soft)" stroke="var(--ink)" stroke-width="5"/>' +
+      '<rect x="172" y="112" width="18" height="86" fill="var(--card)" opacity=".92"/>' +
+      '<rect x="120" y="146" width="124" height="14" fill="var(--card)" opacity=".92"/>' +
+      '<circle cx="254" cy="152" r="30" fill="var(--g)" stroke="var(--ink)" stroke-width="5"/>' +
+      '<circle cx="254" cy="152" r="12" fill="var(--card)"/>' +
+      '<path d="M254 122v10" stroke="var(--card)" stroke-width="5" stroke-linecap="round"/>' +
+    '</symbol>' +
+
+    /* ---------- 13. цена --------------------------------------------------- */
+    '<symbol id="ic-price" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<path d="M62 68c26 6 40 22 44 44" fill="none" stroke="var(--ink)" stroke-width="3"/>' +
+      '<g transform="rotate(-10 168 126)">' +
+        '<path d="M118 84H222a14 14 0 0 1 14 14V148a14 14 0 0 1-14 14H118L76 126Z" ' +
+          'fill="var(--g)" stroke="var(--ink)" stroke-width="6" stroke-linejoin="round"/>' +
+        '<circle cx="110" cy="126" r="9" fill="var(--card)" stroke="var(--ink)" stroke-width="5"/>' +
+        '<path d="M182 104v46" stroke="var(--ink)" stroke-width="9" stroke-linecap="round"/>' +
+        '<path d="M182 104a11 11 0 0 1 0 22" fill="none" stroke="var(--ink)" stroke-width="9"/>' +
+        '<path d="M166 142h28" stroke="var(--ink)" stroke-width="9" stroke-linecap="round"/>' +
+      '</g>' +
+    '</symbol>' +
+
+    /* ---------- 14. скидка ------------------------------------------------- */
+    '<symbol id="ic-discount" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<g transform="rotate(-12 116 124)">' +
+        '<path d="M96 82h66a14 14 0 0 1 14 14v56a14 14 0 0 1-14 14H96L58 124Z" ' +
+          'fill="var(--g-soft)" stroke="var(--ink)" stroke-width="6" stroke-linejoin="round"/>' +
+        '<circle cx="90" cy="124" r="8" fill="var(--card)" stroke="var(--ink)" stroke-width="4"/>' +
+        '<path d="M112 112h30M112 124h20" stroke="var(--ink)" stroke-width="4" opacity=".45"/>' +
+      '</g>' +
+      '<circle cx="228" cy="108" r="44" fill="var(--g)" stroke="var(--ink)" stroke-width="6"/>' +
+      '<circle cx="214" cy="94" r="8" fill="none" stroke="var(--ink)" stroke-width="6"/>' +
+      '<circle cx="240" cy="122" r="8" fill="none" stroke="var(--ink)" stroke-width="6"/>' +
+      '<path d="M206 130l44-42" stroke="var(--ink)" stroke-width="7" stroke-linecap="round"/>' +
+    '</symbol>' +
+
+    /* ---------- 15. стоимость ---------------------------------------------- */
+    '<symbol id="ic-cost" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<rect x="92" y="62" width="118" height="140" rx="14" fill="var(--ink)"/>' +
+      '<rect x="106" y="78" width="90" height="34" rx="5" fill="var(--card)"/>' +
+      '<path d="M114 96h30M152 96h12" stroke="var(--g)" stroke-width="6" stroke-linecap="round"/>' +
+      '<g fill="var(--card)" opacity=".9">' +
+        '<circle cx="122" cy="132" r="6"/><circle cx="150" cy="132" r="6"/><circle cx="178" cy="132" r="6"/>' +
+        '<circle cx="122" cy="158" r="6"/><circle cx="150" cy="158" r="6"/><circle cx="178" cy="158" r="6"/>' +
+        '<circle cx="122" cy="184" r="6"/><circle cx="150" cy="184" r="6"/>' +
+      '</g>' +
+      '<circle cx="178" cy="184" r="6" fill="var(--g)"/>' +
+      '<ellipse cx="248" cy="164" rx="28" ry="9" fill="var(--g)" stroke="var(--ink)" stroke-width="3"/>' +
+      '<ellipse cx="248" cy="174" rx="28" ry="9" fill="var(--g)" stroke="var(--ink)" stroke-width="3"/>' +
+      '<ellipse cx="248" cy="184" rx="28" ry="9" fill="var(--g)" stroke="var(--ink)" stroke-width="3"/>' +
+      '<circle cx="248" cy="152" r="12" fill="var(--card)" opacity=".55"/>' +
+    '</symbol>' +
+
+    /* ---------- 16. количество --------------------------------------------- */
+    '<symbol id="ic-amount" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<rect x="72" y="64" width="176" height="124" rx="12" fill="var(--g-soft)" stroke="var(--ink)" stroke-width="6"/>' +
+      '<path d="M82 90h156M82 118h156M82 146h156M82 174h156" stroke="var(--ink)" stroke-width="4"/>' +
+      '<g>' +
+        '<circle cx="100" cy="90" r="10" fill="var(--g)"/>' +
+        '<circle cx="126" cy="90" r="10" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/>' +
+        '<circle cx="152" cy="90" r="10" fill="var(--g)"/>' +
+        '<circle cx="180" cy="90" r="10" fill="var(--g)"/>' +
+        '<circle cx="206" cy="90" r="10" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/>' +
+        '<circle cx="96" cy="118" r="10" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/>' +
+        '<circle cx="124" cy="118" r="10" fill="var(--g)"/>' +
+        '<circle cx="150" cy="118" r="10" fill="var(--g)"/>' +
+        '<circle cx="192" cy="118" r="10" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/>' +
+        '<circle cx="218" cy="118" r="10" fill="var(--g)"/>' +
+        '<circle cx="104" cy="146" r="10" fill="var(--g)"/>' +
+        '<circle cx="132" cy="146" r="10" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/>' +
+        '<circle cx="158" cy="146" r="10" fill="var(--g)"/>' +
+        '<circle cx="186" cy="146" r="10" fill="var(--g)"/>' +
+        '<circle cx="212" cy="146" r="10" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/>' +
+        '<circle cx="92" cy="174" r="10" fill="var(--g)"/>' +
+        '<circle cx="120" cy="174" r="10" fill="var(--g)"/>' +
+        '<circle cx="146" cy="174" r="10" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/>' +
+        '<circle cx="174" cy="174" r="10" fill="var(--g)"/>' +
+        '<circle cx="214" cy="174" r="10" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/>' +
+      '</g>' +
+    '</symbol>' +
+
+    /* ---------- 17. оптом -------------------------------------------------- */
+    '<symbol id="ic-wholesale" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<g fill="var(--g)">' +
+        '<rect x="72" y="128" width="54" height="46" rx="4"/>' +
+        '<rect x="134" y="128" width="54" height="46" rx="4"/>' +
+        '<rect x="196" y="128" width="54" height="46" rx="4"/>' +
+      '</g>' +
+      '<g fill="var(--ink)">' +
+        '<rect x="103" y="82" width="54" height="46" rx="4"/>' +
+        '<rect x="165" y="82" width="54" height="46" rx="4"/>' +
+      '</g>' +
+      '<g fill="var(--card)" opacity=".85">' +
+        '<rect x="95" y="128" width="8" height="46"/>' +
+        '<rect x="157" y="128" width="8" height="46"/>' +
+        '<rect x="219" y="128" width="8" height="46"/>' +
+        '<rect x="126" y="82" width="8" height="46"/>' +
+        '<rect x="188" y="82" width="8" height="46"/>' +
+      '</g>' +
+      '<rect x="60" y="174" width="200" height="14" rx="3" fill="var(--ink)"/>' +
+      '<g fill="var(--ink)">' +
+        '<rect x="66" y="188" width="34" height="10" rx="3"/>' +
+        '<rect x="116" y="188" width="34" height="10" rx="3"/>' +
+        '<rect x="166" y="188" width="34" height="10" rx="3"/>' +
+        '<rect x="216" y="188" width="34" height="10" rx="3"/>' +
+      '</g>' +
+    '</symbol>' +
+
+    /* ---------- 18. в розницу ---------------------------------------------- */
+    '<symbol id="ic-retail" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<path d="M206 92c-8-16-2-26 6-30" fill="none" stroke="var(--ink)" stroke-width="3"/>' +
+      '<path d="M214 92h40a10 10 0 0 1 10 10v34a10 10 0 0 1-10 10h-40l-16-27z" ' +
+        'fill="var(--card)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>' +
+      '<circle cx="214" cy="119" r="4" fill="var(--ink)"/>' +
+      '<path d="M228 110h22M228 120h14" stroke="var(--g)" stroke-width="4" stroke-linecap="round"/>' +
+      '<path d="M238 148c-6 8-18 12-30 12" fill="none" stroke="var(--g)" stroke-width="4" stroke-linecap="round"/>' +
+      '<rect x="128" y="104" width="66" height="72" rx="6" fill="var(--g)" stroke="var(--ink)" stroke-width="5"/>' +
+      '<rect x="174" y="104" width="10" height="72" fill="var(--card)" opacity=".85"/>' +
+      '<rect x="142" y="120" width="30" height="20" rx="2" fill="var(--card)"/>' +
+      '<path d="M148 128h16M148 134h10" stroke="var(--g)" stroke-width="3"/>' +
+      '<rect x="96" y="176" width="160" height="10" rx="5" fill="var(--ink)"/>' +
+      '<circle cx="100" cy="96" r="20" fill="var(--ink)"/>' +
+      '<text x="100" y="104" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="var(--card)">1</text>' +
+    '</symbol>' +
+
+    /* ---------- 19. купить ------------------------------------------------- */
+    '<symbol id="ic-buy" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<circle cx="234" cy="148" r="26" fill="var(--card)" stroke="var(--ink)" stroke-width="5"/>' +
+      '<circle cx="234" cy="148" r="11" fill="var(--g)"/>' +
+      '<path d="M100 112h116l-10 84c-1 7-7 12-14 12H124c-7 0-13-5-14-12z" ' +
+        'fill="var(--g)" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/>' +
+      '<path d="M132 112V96c0-17 12-28 28-28s28 11 28 28v16" fill="none" stroke="var(--ink)" stroke-width="5"/>' +
+      '<path d="M124 140h68" stroke="var(--card)" stroke-width="5" opacity=".8"/>' +
+      '<path d="M134 166h48" stroke="var(--card)" stroke-width="4" opacity=".45"/>' +
+    '</symbol>' +
+
+    /* ---------- 20. продать ------------------------------------------------ */
+    '<symbol id="ic-sell" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<path d="M160 76h62" stroke="var(--g)" stroke-width="8" stroke-linecap="round"/>' +
+      '<path d="M220 62l24 14-24 14z" fill="var(--g)"/>' +
+      '<rect x="88" y="112" width="66" height="40" rx="4" fill="var(--g)" stroke="var(--ink)" stroke-width="4"/>' +
+      '<rect x="114" y="112" width="12" height="40" fill="var(--card)" opacity=".85"/>' +
+      '<rect x="66" y="152" width="188" height="12" rx="4" fill="var(--ink)"/>' +
+      '<rect x="74" y="164" width="10" height="30" fill="var(--ink)"/>' +
+      '<rect x="236" y="164" width="10" height="30" fill="var(--ink)"/>' +
+      '<g transform="rotate(-10 196 132)">' +
+        '<rect x="164" y="120" width="64" height="30" rx="4" fill="var(--card)" stroke="var(--ink)" stroke-width="4"/>' +
+        '<circle cx="196" cy="135" r="8" fill="var(--g)"/>' +
+      '</g>' +
+      '<g transform="rotate(8 218 112)">' +
+        '<rect x="192" y="98" width="60" height="28" rx="4" fill="var(--card)" stroke="var(--ink)" stroke-width="4"/>' +
+        '<path d="M204 112h20" stroke="var(--g)" stroke-width="3"/>' +
+      '</g>' +
+    '</symbol>' +
+
+    /* ---------- 21. заказать ----------------------------------------------- */
+    '<symbol id="ic-order" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<rect x="106" y="62" width="112" height="142" rx="8" fill="var(--card)" stroke="var(--ink)" stroke-width="5"/>' +
+      '<rect x="142" y="52" width="40" height="20" rx="7" fill="var(--ink)"/>' +
+      '<g fill="none" stroke="var(--ink)" stroke-width="3">' +
+        '<rect x="120" y="96" width="13" height="13" rx="2"/>' +
+        '<rect x="120" y="120" width="13" height="13" rx="2"/>' +
+        '<rect x="120" y="144" width="13" height="13" rx="2"/>' +
+        '<rect x="120" y="168" width="13" height="13" rx="2"/>' +
+      '</g>' +
+      '<path d="M139 102h58M139 126h44M139 150h58M139 174h32" stroke="var(--g)" stroke-width="5" stroke-linecap="round"/>' +
+      '<path d="M123 102l4 4 6-7M123 126l4 4 6-7" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>' +
+      '<g transform="rotate(18 246 140)">' +
+        '<rect x="238" y="92" width="14" height="86" rx="3" fill="var(--g)"/>' +
+        '<path d="M238 92h14v8h-14z" fill="var(--ink)"/>' +
+        '<path d="M238 178l7 20 7-20z" fill="var(--ink)"/>' +
+      '</g>' +
+    '</symbol>' +
+
+    /* ---------- 22. оплатить ----------------------------------------------- */
+    '<symbol id="ic-pay" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<rect x="88" y="66" width="104" height="140" rx="16" fill="var(--ink)"/>' +
+      '<rect x="102" y="82" width="76" height="46" rx="5" fill="var(--card)"/>' +
+      '<path d="M112 96h26M112 110h40" stroke="var(--g)" stroke-width="5" stroke-linecap="round"/>' +
+      '<g fill="var(--card)" opacity=".9">' +
+        '<circle cx="112" cy="150" r="6.5"/><circle cx="132" cy="150" r="6.5"/><circle cx="152" cy="150" r="6.5"/>' +
+        '<circle cx="112" cy="170" r="6.5"/><circle cx="132" cy="170" r="6.5"/><circle cx="152" cy="170" r="6.5"/>' +
+        '<circle cx="112" cy="190" r="6.5"/><circle cx="132" cy="190" r="6.5"/>' +
+      '</g>' +
+      '<circle cx="152" cy="190" r="6.5" fill="var(--g)"/>' +
+      '<g transform="rotate(-14 234 132)">' +
+        '<rect x="188" y="104" width="94" height="58" rx="8" fill="var(--g)" stroke="var(--ink)" stroke-width="5"/>' +
+        '<rect x="188" y="118" width="94" height="12" fill="var(--ink)"/>' +
+        '<rect x="202" y="140" width="20" height="14" rx="3" fill="var(--card)" opacity=".9"/>' +
+      '</g>' +
+      '<circle cx="256" cy="82" r="20" fill="var(--g)" stroke="var(--ink)" stroke-width="4"/>' +
+      '<path d="M247 82l6 6 12-12" fill="none" stroke="var(--card)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '</symbol>' +
+
+    /* ---------- 23. касса -------------------------------------------------- */
+    '<symbol id="ic-cashier" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<rect x="88" y="128" width="140" height="62" rx="10" fill="var(--ink)"/>' +
+      '<rect x="88" y="190" width="140" height="8" rx="3" fill="var(--ink)" opacity=".55"/>' +
+      '<rect x="106" y="92" width="70" height="44" rx="6" fill="var(--g)" stroke="var(--ink)" stroke-width="4"/>' +
+      '<path d="M116 108h30M116 120h18" stroke="var(--card)" stroke-width="4" stroke-linecap="round"/>' +
+      '<g fill="var(--card)" opacity=".9">' +
+        '<circle cx="104" cy="146" r="5.5"/><circle cx="126" cy="146" r="5.5"/><circle cx="148" cy="146" r="5.5"/>' +
+        '<circle cx="170" cy="146" r="5.5"/><circle cx="192" cy="146" r="5.5"/>' +
+        '<circle cx="104" cy="166" r="5.5"/><circle cx="126" cy="166" r="5.5"/><circle cx="148" cy="166" r="5.5"/>' +
+        '<circle cx="170" cy="166" r="5.5"/><circle cx="192" cy="166" r="5.5"/>' +
+      '</g>' +
+      '<path d="M196 96h34v58l-8.5-6-8.5 6-8.5-6-8.5 6z" fill="var(--card)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>' +
+      '<path d="M204 110h18M204 120h18M204 130h12" stroke="var(--g)" stroke-width="3"/>' +
+      '<rect x="196" y="72" width="34" height="6" rx="3" fill="var(--ink)"/>' +
+    '</symbol>' +
+
+    /* ---------- 24. чек ---------------------------------------------------- */
+    '<symbol id="ic-receipt" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<path d="M112 58h96v128l-8 8-8-8-8 8-8-8-8 8-8-8-8 8-8-8-8 8-8-8-8 8-8-8-8 8z" ' +
+        'fill="var(--card)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>' +
+      '<path d="M126 84h68M126 100h48M126 116h68M126 132h30" stroke="var(--g)" stroke-width="5" stroke-linecap="round"/>' +
+      '<path d="M126 152h68M126 166h34" stroke="var(--ink)" stroke-width="6" stroke-linecap="round"/>' +
+      '<circle cx="240" cy="170" r="22" fill="var(--g)" stroke="var(--ink)" stroke-width="4"/>' +
+      '<circle cx="240" cy="170" r="9" fill="var(--card)"/>' +
+      '<path d="M240 34v18" stroke="var(--ink)" stroke-width="4" opacity=".25"/>' +
+    '</symbol>' +
+
+    /* ---------- 25. договор ------------------------------------------------ */
+    '<symbol id="ic-contract" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<path d="M100 56h88l32 32v100a14 14 0 0 1-14 14H100a14 14 0 0 1-14-14V70a14 14 0 0 1 14-14z" ' +
+        'fill="var(--card)" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/>' +
+      '<path d="M188 56l32 32h-32z" fill="var(--g-soft)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"/>' +
+      '<path d="M104 104h84M104 122h64M104 140h84M104 158h44" stroke="var(--ink)" stroke-width="4" opacity=".3" stroke-linecap="round"/>' +
+      '<path d="M104 178c7-9 12 6 19-2s11 7 18-1" fill="none" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>' +
+      '<circle cx="186" cy="176" r="24" fill="var(--g)" stroke="var(--ink)" stroke-width="4"/>' +
+      '<circle cx="186" cy="176" r="14" fill="none" stroke="var(--card)" stroke-width="3" opacity=".85"/>' +
+    '</symbol>' +
+
+    /* ---------- 26. сделка ------------------------------------------------- */
+    '<symbol id="ic-deal" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<circle cx="104" cy="94" r="18" fill="var(--ink)"/>' +
+      '<path d="M76 200c0-44 12-70 28-70s28 26 28 70z" fill="var(--g)"/>' +
+      '<circle cx="216" cy="94" r="18" fill="var(--g)"/>' +
+      '<path d="M188 200c0-44 12-70 28-70s28 26 28 70z" fill="var(--ink)"/>' +
+      '<path d="M126 152h68" stroke="var(--g)" stroke-width="15" stroke-linecap="round"/>' +
+      '<circle cx="160" cy="152" r="16" fill="var(--card)" stroke="var(--ink)" stroke-width="4"/>' +
+      '<path d="M152 152l6 6 12-13" fill="none" stroke="var(--g)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>' +
+      '<path d="M160 46l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="var(--g)"/>' +
+      '<circle cx="92" cy="52" r="3.5" fill="var(--g)"/>' +
+      '<circle cx="226" cy="50" r="3.5" fill="var(--ink)" opacity=".45"/>' +
+    '</symbol>' +
+
+    /* ---------- 27. поставка ----------------------------------------------- */
+    '<symbol id="ic-delivery" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<path d="M32 130h12M26 144h12M32 158h12" stroke="var(--g)" stroke-width="4" stroke-linecap="round" opacity=".8"/>' +
+      '<rect x="52" y="92" width="132" height="76" rx="4" fill="var(--g)"/>' +
+      '<path d="M76 92v76M100 92v76M124 92v76M148 92v76M172 92v76" stroke="var(--ink)" stroke-width="3" opacity=".18"/>' +
+      '<path d="M184 112h34l22 28v28h-56z" fill="var(--ink)"/>' +
+      '<path d="M192 120h22l14 20h-36z" fill="var(--card)"/>' +
+      '<rect x="192" y="158" width="42" height="8" rx="3" fill="var(--ink)"/>' +
+      '<circle cx="90" cy="172" r="20" fill="var(--ink)"/>' +
+      '<circle cx="90" cy="172" r="8" fill="var(--card)"/>' +
+      '<circle cx="214" cy="172" r="20" fill="var(--ink)"/>' +
+      '<circle cx="214" cy="172" r="8" fill="var(--card)"/>' +
+      '<path d="M40 196h208" stroke="var(--ink)" stroke-width="5" opacity=".25" stroke-linecap="round"/>' +
+      '<path d="M256 196h28" stroke="var(--ink)" stroke-width="5" opacity=".25" stroke-linecap="round"/>' +
+    '</symbol>' +
+
+    /* ---------- 28. спрос --------------------------------------------------- */
+    '<symbol id="ic-demand" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<path d="M72 190h180" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>' +
+      '<rect x="88" y="150" width="30" height="40" rx="4" fill="var(--g-soft)"/>' +
+      '<rect x="130" y="126" width="30" height="64" rx="4" fill="var(--g)"/>' +
+      '<rect x="172" y="100" width="30" height="90" rx="4" fill="var(--g)"/>' +
+      '<rect x="214" y="74" width="30" height="116" rx="4" fill="var(--ink)"/>' +
+      '<path d="M84 132c36-8 76-28 132-52" fill="none" stroke="var(--g)" stroke-width="7" stroke-linecap="round"/>' +
+      '<path d="M228 70l18-8-2 20z" fill="var(--g)"/>' +
+    '</symbol>' +
+
+    /* ---------- 29. реклама ------------------------------------------------ */
+    '<symbol id="ic-ads" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<path d="M92 118l84-34v78z" fill="var(--g)"/>' +
+      '<rect x="176" y="80" width="16" height="78" rx="7" fill="var(--ink)"/>' +
+      '<rect x="106" y="124" width="24" height="46" rx="10" fill="var(--ink)"/>' +
+      '<path d="M208 100c14 12 14 40 0 52M228 88c24 18 24 60 0 76" fill="none" stroke="var(--ink)" stroke-width="6" stroke-linecap="round" opacity=".8"/>' +
+      '<circle cx="118" cy="62" r="22" fill="var(--card)" stroke="var(--ink)" stroke-width="4"/>' +
+      '<circle cx="110" cy="55" r="4" fill="none" stroke="var(--ink)" stroke-width="3"/>' +
+      '<circle cx="126" cy="69" r="4" fill="none" stroke="var(--ink)" stroke-width="3"/>' +
+      '<path d="M106 72l20-20" stroke="var(--ink)" stroke-width="3"/>' +
+    '</symbol>' +
+
+    /* ---------- 30. качество ----------------------------------------------- */
+    '<symbol id="ic-quality" viewBox="0 0 320 240">' +
+      '<circle cx="160" cy="126" r="86" fill="var(--g-soft)" opacity=".5"/>' +
+      '<path d="M116 184l-14 30 24-8z" fill="var(--ink)" opacity=".6"/>' +
+      '<path d="M204 184l14 30-24-8z" fill="var(--ink)" opacity=".6"/>' +
+      '<path d="M160 56l70 22v52c0 38-30 62-70 76-40-14-70-38-70-76V78z" ' +
+        'fill="var(--g)" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/>' +
+      '<path d="M128 132l22 22 44-46" fill="none" stroke="var(--card)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '</symbol>' +
+
+    /* ---------- UI-иконки -------------------------------------------------- */
+    '<symbol id="ui-speaker" viewBox="0 0 24 24">' +
+      '<path d="M4 9.5h3.2L12 5.4v13.2l-4.8-4.1H4z" fill="currentColor"/>' +
+      '<path d="M15.2 8.4a5 5 0 0 1 0 7.2M18 5.8a9 9 0 0 1 0 12.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>' +
+    '</symbol>' +
+    '<symbol id="ui-check" viewBox="0 0 24 24">' +
+      '<path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '</symbol>' +
+    '<symbol id="ui-x" viewBox="0 0 24 24">' +
+      '<path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>' +
+    '</symbol>' +
+    '<symbol id="ui-arrow" viewBox="0 0 24 24">' +
+      '<path d="M4 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '</symbol>' +
+    '<symbol id="ui-play" viewBox="0 0 24 24">' +
+      '<path d="M8 5l11 7-11 7z" fill="currentColor"/>' +
+    '</symbol>' +
+    '<symbol id="ui-stop" viewBox="0 0 24 24">' +
+      '<rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor"/>' +
+    '</symbol>' +
+    '<symbol id="ui-translate" viewBox="0 0 24 24">' +
+      '<path d="M3.5 6h9M8 4v2c0 4.2-2.4 8-5.5 10M5.4 10.5c1.4 3 3.7 5 6.1 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>' +
+      '<path d="M12.5 20l3.8-9 3.8 9M13.9 17h4.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>' +
+    '</symbol>' +
+    '<symbol id="ui-restart" viewBox="0 0 24 24">' +
+      '<path d="M20 12a8 8 0 1 1-2.7-6M20 4.5V10h-5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '</symbol>' +
+    '<symbol id="ui-search" viewBox="0 0 24 24">' +
+      '<circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/>' +
+      '<path d="M15.5 15.5L21 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' +
+    '</symbol>' +
+    '<symbol id="ui-bulb" viewBox="0 0 24 24">' +
+      '<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.4.9 1 .9 1.7v.4h5.2v-.4c0-.7.3-1.3.9-1.7A6 6 0 0 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '</symbol>' +
+    '<symbol id="ui-trophy" viewBox="0 0 24 24">' +
+      '<path d="M7 4h10v5a5 5 0 0 1-10 0zM7 5H4v2a3 3 0 0 0 3 3M17 5h3v2a3 3 0 0 1-3 3M12 14v4M8 21h8M9.5 18h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '</symbol>' +
+    '<symbol id="ui-tag" viewBox="0 0 24 24">' +
+      '<path d="M3 12.8V5.5A2.5 2.5 0 0 1 5.5 3h7.3L21 11.2 12.8 19.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>' +
+      '<circle cx="8" cy="8" r="1.7" fill="currentColor"/>' +
+    '</symbol>' +
+
+    /* ---------- Сцена для первого экрана ---------------------------------- */
+    '<symbol id="hero-market" viewBox="0 0 720 520">' +
+      '<circle cx="452" cy="238" r="196" fill="var(--gold-tint)"/>' +
+      '<circle cx="250" cy="356" r="120" fill="var(--rust-tint)" opacity=".7"/>' +
+      '<path d="M36 74Q360 132 684 66" fill="none" stroke="var(--ink)" stroke-width="3" opacity=".45"/>' +
+      '<path d="M87 81l26 0-13 26z" fill="var(--gold)"/>' +
+      '<path d="M167 90l26 1-13 26z" fill="var(--rust)"/>' +
+      '<path d="M257 97l26 1-13 26z" fill="var(--ink)"/>' +
+      '<path d="M347 99l26 0-13 26z" fill="var(--gold)"/>' +
+      '<path d="M437 96l26-1-13 26z" fill="var(--rust)"/>' +
+      '<path d="M527 88l26-1-13 26z" fill="var(--ink)"/>' +
+      '<path d="M607 76l26-2-13 26z" fill="var(--gold)"/>' +
+      '<rect x="236" y="196" width="14" height="176" fill="var(--ink)"/>' +
+      '<rect x="574" y="196" width="14" height="176" fill="var(--ink)"/>' +
+      '<circle cx="245" cy="188" r="33" fill="var(--rust)"/>' +
+      '<circle cx="311" cy="188" r="33" fill="var(--gold)"/>' +
+      '<circle cx="378" cy="188" r="33" fill="var(--rust)"/>' +
+      '<circle cx="444" cy="188" r="33" fill="var(--gold)"/>' +
+      '<circle cx="511" cy="188" r="33" fill="var(--rust)"/>' +
+      '<circle cx="578" cy="188" r="33" fill="var(--gold)"/>' +
+      '<rect x="212" y="148" width="400" height="40" fill="var(--rust)"/>' +
+      '<g fill="var(--card)" opacity=".28">' +
+        '<rect x="252" y="148" width="9" height="40"/>' +
+        '<rect x="318" y="148" width="9" height="40"/>' +
+        '<rect x="384" y="148" width="9" height="40"/>' +
+        '<rect x="450" y="148" width="9" height="40"/>' +
+        '<rect x="516" y="148" width="9" height="40"/>' +
+      '</g>' +
+      '<rect x="312" y="94" width="200" height="50" rx="10" fill="var(--ink)"/>' +
+      '<text x="412" y="128" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="24" letter-spacing="2.5" fill="var(--paper-2)">ТОРГОВЛЯ</text>' +
+      '<path d="M280 188v22M544 188v26" stroke="var(--ink)" stroke-width="3"/>' +
+      '<g transform="rotate(-8 280 236)">' +
+        '<rect x="252" y="210" width="56" height="38" rx="7" fill="var(--card)" stroke="var(--ink)" stroke-width="4"/>' +
+        '<circle cx="262" cy="221" r="4" fill="var(--ink)"/>' +
+        '<path d="M272 240h24M272 230h14" stroke="var(--rust)" stroke-width="4" stroke-linecap="round"/>' +
+      '</g>' +
+      '<g transform="rotate(-6 544 238)">' +
+        '<rect x="514" y="214" width="60" height="38" rx="7" fill="var(--gold)" stroke="var(--ink)" stroke-width="4"/>' +
+        '<path d="M524 234h22" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>' +
+      '</g>' +
+      /* продавец за прилавком */
+      '<circle cx="400" cy="262" r="18" fill="var(--ink)"/>' +
+      '<rect x="393" y="276" width="14" height="18" fill="var(--ink)"/>' +
+      '<path d="M372 336c0-30 13-46 28-46s28 16 28 46z" fill="var(--forest)"/>' +
+      '<path d="M387 304h26v32h-26z" fill="var(--card)" opacity=".85"/>' +
+      /* матрёшка на прилавке */
+      '<g transform="translate(430 240) scale(.55)">' +
+        '<path d="M160 60c20 0 36 14 36 32 0 9-5 14 0 24 12 22 18 42 10 58-7 14-26 20-46 20s-39-6-46-20c-8-16-2-36 10-58 5-10 0-15 0-24 0-18 16-32 36-32z" fill="var(--rust)"/>' +
+        '<ellipse cx="160" cy="96" rx="22" ry="24" fill="var(--card)"/>' +
+        '<path d="M120 94Q160 56 200 94L192 108Q160 78 128 108Z" fill="var(--ink)"/>' +
+        '<circle cx="151" cy="100" r="3" fill="var(--ink)"/>' +
+        '<circle cx="169" cy="100" r="3" fill="var(--ink)"/>' +
+        '<circle cx="160" cy="150" r="9" fill="var(--card)" opacity=".9"/>' +
+      '</g>' +
+      '<rect x="216" y="336" width="396" height="26" fill="var(--ink)"/>' +
+      '<rect x="228" y="362" width="372" height="70" fill="var(--gold-tint)"/>' +
+      '<g stroke="var(--gold)" stroke-width="2" opacity=".35">' +
+        '<path d="M264 362v70M312 362v70M360 362v70M408 362v70M456 362v70M504 362v70M552 362v70"/>' +
+      '</g>' +
+      '<path d="M228 424h372" stroke="var(--ink)" stroke-width="4" opacity=".12"/>' +
+      '<rect x="250" y="296" width="96" height="40" rx="4" fill="var(--ink)"/>' +
+      '<path d="M250 308h96" stroke="var(--card)" stroke-width="3" opacity=".3"/>' +
+      '<circle cx="274" cy="288" r="11" fill="var(--rust)"/>' +
+      '<circle cx="300" cy="288" r="11" fill="var(--rust)"/>' +
+      '<circle cx="326" cy="288" r="11" fill="var(--rust)"/>' +
+      '<g transform="translate(96 330)">' +
+        '<path d="M0 0h104l-8 86c-1 6-6 10-12 10H20c-6 0-11-4-12-10z" fill="var(--forest)"/>' +
+        '<path d="M26 0v-14c0-14 10-24 26-24s26 10 26 24V0" fill="none" stroke="var(--ink)" stroke-width="6"/>' +
+        '<path d="M16 32h72" stroke="var(--card)" stroke-width="6" opacity=".7"/>' +
+        '<circle cx="52" cy="62" r="10" fill="var(--card)" opacity=".35"/>' +
+      '</g>' +
+      '<circle cx="620" cy="252" r="26" fill="var(--gold)" stroke="var(--ink)" stroke-width="4"/>' +
+      '<circle cx="620" cy="252" r="10" fill="var(--card)" opacity=".6"/>' +
+      '<circle cx="660" cy="302" r="17" fill="var(--gold-soft)" stroke="var(--ink)" stroke-width="4"/>' +
+      '<g transform="rotate(10 606 392)">' +
+        '<rect x="556" y="362" width="100" height="60" rx="10" fill="var(--rust)" stroke="var(--ink)" stroke-width="4"/>' +
+        '<text x="606" y="404" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="var(--card)">−20%</text>' +
+      '</g>' +
+      '<ellipse cx="400" cy="450" rx="290" ry="14" fill="var(--ink)" opacity=".08"/>' +
+    '</symbol>' +
+
+    '</svg>';
+
+  function inject() {
+    if (document.getElementById('icon-sprite')) return;
+    document.body.insertAdjacentHTML('afterbegin', SPRITE);
+  }
+
+  function markup(id, cls) {
+    return '<svg class="' + (cls || 'ic') + '" aria-hidden="true" focusable="false"><use href="#' + id + '"></use></svg>';
+  }
+
+  return { inject: inject, svg: markup, sprite: SPRITE };
+})();
+
+</script>
+<script>
+/* ==========================================================================
+   Тематическая группа «Торговля» — учебные материалы
+   Уровень A2–B1 · для китайских студентов, изучающих русский язык
+   Все тексты, переводы и задания собраны здесь: правьте только этот файл,
+   чтобы обновить содержание сайта.
+   Знак ́ (U+0301) — ударение. В озвучивании и поиске он убирается автоматически.
+   ========================================================================== */
+window.SITE_DATA = (function () {
+  'use strict';
+
+  /* Обёртка для слова с подсказкой-переводом внутри текста */
+  function G(word, zh) {
+    return '<span class="gloss">' + word + '<span class="gloss__tip">' + zh + '</span></span>';
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Подгруппы тематической группы                                       */
+  /* ------------------------------------------------------------------ */
+  var groups = [
+    {
+      id: 'people',
+      ru: 'Люди и места',
+      zh: '人与场所',
+      short: 'Люди и места',
+      desc: 'Кто торгует, кто покупает и где это происходит.',
+      descZh: '谁在卖、谁在买，以及交易发生在哪里。'
+    },
+    {
+      id: 'goods',
+      ru: 'Товар',
+      zh: '商品',
+      short: 'Товар',
+      desc: 'Что продают: вещи, продукты, упаковка.',
+      descZh: '卖什么：物品、食品、包装。'
+    },
+    {
+      id: 'price',
+      ru: 'Цена и количество',
+      zh: '价格与数量',
+      short: 'Цена и количество',
+      desc: 'Сколько стоит и в каком объёме продают.',
+      descZh: '多少钱，以什么数量出售。'
+    },
+    {
+      id: 'pay',
+      ru: 'Покупка и оплата',
+      zh: '购买与支付',
+      short: 'Покупка и оплата',
+      desc: 'Действия покупателя: выбрать, купить, заплатить.',
+      descZh: '顾客的行为：挑选、购买、付款。'
+    },
+    {
+      id: 'deal',
+      ru: 'Сделка и рынок',
+      zh: '交易与市场',
+      short: 'Сделка и рынок',
+      desc: 'Как договариваются компании: договор, поставка, спрос.',
+      descZh: '公司如何达成交易：合同、供货、需求。'
+    }
+  ];
+
+  /* ------------------------------------------------------------------ */
+  /* Словарь: 30 слов                                                    */
+  /* ------------------------------------------------------------------ */
+  var words = [
+    {
+      id: 'torgovlya', ru: 'торго́вля', pos: 'сущ. ж. р.', zh: '贸易，商业',
+      group: 'people', icon: 'ic-trade',
+      ex: 'Торговля между Китаем и Россией растёт с каждым годом.',
+      exZh: '中俄贸易逐年增长。',
+      note: '抽象名词，指整体的商业活动，不可数。具体的“一笔交易”是 сделка，“购物行为”是 покупка。常见搭配：опто́вая / ро́зничная торго́вля。'
+    },
+    {
+      id: 'rynok', ru: 'ры́нок', pos: 'сущ. м. р.', zh: '市场，集市',
+      group: 'people', icon: 'ic-market',
+      ex: 'В субботу мы ходим на рынок за овощами и фруктами.',
+      exZh: '周六我们去市场买蔬菜和水果。',
+      note: '既指实体的“市场、集市”（пойти́ на ры́нок 去市场），也指经济意义上的“市场”（вы́йти на ры́нок 进入市场）。前置格：на ры́нке。'
+    },
+    {
+      id: 'magazin', ru: 'магази́н', pos: 'сущ. м. р.', zh: '商店',
+      group: 'people', icon: 'ic-shop',
+      ex: 'Этот магазин работает до десяти вечера.',
+      exZh: '这家商店营业到晚上十点。',
+      note: '泛指“商店”。小亭子是 кио́ск，超市是 суперма́ркет，网店是 интерне́т-магази́н。前置格：в магази́не。'
+    },
+    {
+      id: 'pokupatel', ru: 'покупа́тель', pos: 'сущ. м. р.', zh: '顾客，买方',
+      group: 'people', icon: 'ic-buyer',
+      ex: 'Покупатель спросил, есть ли у нас красные платки.',
+      exZh: '顾客问我们有没有红色的头巾。',
+      note: '“顾客、买方”。клие́нт 更强调“客户、老主顾”。反义词：продаве́ц。'
+    },
+    {
+      id: 'prodavets', ru: 'продаве́ц', pos: 'сущ. м. р.', zh: '售货员，卖方',
+      group: 'people', icon: 'ic-seller',
+      ex: 'Продавец показал нам три разные матрёшки.',
+      exZh: '售货员给我们看了三个不同的套娃。',
+      note: '“售货员、卖方”。重音在最后一个音节，不是 *про́давец。复数：продавцы́。同根词：прода́ть, прода́жа。'
+    },
+    {
+      id: 'yarmarka', ru: 'я́рмарка', pos: 'сущ. ж. р.', zh: '集市，展销会',
+      group: 'people', icon: 'ic-fair',
+      ex: 'На ярмарке можно попробовать мёд и купить подарки.',
+      exZh: '在集市上可以品尝蜂蜜，还能买礼物。',
+      note: '传统集市、展销会，带节庆色彩，比 ры́нок 更强调“临时性的集中交易”。搭配：кни́жная я́рмарка 书展。'
+    },
+    {
+      id: 'tovar', ru: 'това́р', pos: 'сущ. м. р.', zh: '商品，货物',
+      group: 'goods', icon: 'ic-goods',
+      ex: 'Этот товар сделан в Китае.',
+      exZh: '这件商品是中国制造的。',
+      note: '具体的“商品、货物”，可数。复数 това́ры 常指“各种商品”。注意与 проду́кт（食品）区分。'
+    },
+    {
+      id: 'produkt', ru: 'проду́кт', pos: 'сущ. м. р.', zh: '食品；产品',
+      group: 'goods', icon: 'ic-food',
+      ex: 'Молочные продукты стоят в холодильнике.',
+      exZh: '奶制品放在冰箱里。',
+      note: '单数多指抽象的“产品、产物”，复数 проду́кты 常指“食品、食材”。моло́чные проду́кты 奶制品。'
+    },
+    {
+      id: 'odezhda', ru: 'оде́жда', pos: 'сущ. ж. р.', zh: '衣服（总称）',
+      group: 'goods', icon: 'ic-clothes',
+      ex: 'Зимняя одежда в этом магазине дорогая.',
+      exZh: '这家商店的冬装很贵。',
+      note: '衣服的总称，不可数：不能说 *две оде́жды。一件衣服可以说 вещь。搭配：зи́мняя / ле́тняя оде́жда。'
+    },
+    {
+      id: 'obuv', ru: 'о́бувь', pos: 'сущ. ж. р.', zh: '鞋（总称）',
+      group: 'goods', icon: 'ic-shoes',
+      ex: 'Обувь лучше покупать в конце сезона, когда есть скидки.',
+      exZh: '鞋子最好在季末买，那时有折扣。',
+      note: '鞋类的总称，不可数。一双鞋是 па́ра о́буви；一只男鞋是 боти́нок，一只女鞋是 ту́фля。'
+    },
+    {
+      id: 'suvenir', ru: 'сувени́р', pos: 'сущ. м. р.', zh: '纪念品',
+      group: 'goods', icon: 'ic-souvenir',
+      ex: 'Туристы покупают сувениры на память о поездке.',
+      exZh: '游客买纪念品，留作旅行的回忆。',
+      note: '“纪念品”。俄罗斯典型纪念品：матрё́шка 套娃、плато́к 头巾、магни́т 冰箱贴。搭配：на па́мять 作为纪念。'
+    },
+    {
+      id: 'upakovka', ru: 'упако́вка', pos: 'сущ. ж. р.', zh: '包装',
+      group: 'goods', icon: 'ic-pack',
+      ex: 'У этого чая красивая упаковка, поэтому его приятно дарить.',
+      exZh: '这种茶的包装很漂亮，所以很适合送人。',
+      note: '“包装；包装材料”。动词 упакова́ть 打包。搭配：в краси́вой упако́вке 包装精美。'
+    },
+    {
+      id: 'tsena', ru: 'цена́', pos: 'сущ. ж. р.', zh: '价格',
+      group: 'price', icon: 'ic-price',
+      ex: 'Цена на этот шарф — тысяча рублей.',
+      exZh: '这条围巾的价格是一千卢布。',
+      note: '“价格”。问价：Ско́лько сто́ит…? 搭配：высо́кая / ни́зкая цена́, цена́ на что（на проду́кты）。'
+    },
+    {
+      id: 'skidka', ru: 'ски́дка', pos: 'сущ. ж. р.', zh: '折扣',
+      group: 'price', icon: 'ic-discount',
+      ex: 'На все сумки сейчас скидка тридцать процентов.',
+      exZh: '现在所有包都打七折。',
+      note: '“折扣”。ски́дка 20% 表示减价 20%，中文说“打八折”。搭配：сде́лать ски́дку, со ски́дкой, продава́ть со ски́дкой。'
+    },
+    {
+      id: 'stoimost', ru: 'сто́имость', pos: 'сущ. ж. р.', zh: '价值，费用',
+      group: 'price', icon: 'ic-cost',
+      ex: 'Стоимость доставки входит в цену товара.',
+      exZh: '运费包含在商品价格里。',
+      note: '比 цена́ 更书面、更正式，常用于运费、总费用、服务价格。搭配：сто́имость доста́вки 运费。'
+    },
+    {
+      id: 'kolichestvo', ru: 'коли́чество', pos: 'сущ. ср. р.', zh: '数量',
+      group: 'price', icon: 'ic-amount',
+      ex: 'Уточните, пожалуйста, количество товара в заказе.',
+      exZh: '请确认订单中商品的数量。',
+      note: '“数量”。问数量用 ско́лько。注意与 число́（数字）、объём（容量）区别。搭配：большо́е / ма́лое коли́чество。'
+    },
+    {
+      id: 'optom', ru: 'о́птом', pos: 'наречие', zh: '批发（地）',
+      group: 'price', icon: 'ic-wholesale',
+      ex: 'Наша компания покупает чай оптом и продаёт в розницу.',
+      exZh: '我们公司批发买茶，再零售卖出。',
+      note: '副词，“以批发方式”。反义：в ро́зницу。形容词：опто́вый（опто́вая торго́вля 批发贸易）。'
+    },
+    {
+      id: 'roznitsa', ru: 'в\u00A0ро́зницу', pos: 'нареч. выражение', zh: '零售（地）',
+      group: 'price', icon: 'ic-retail',
+      ex: 'В розницу этот чай стоит дороже, чем оптом.',
+      exZh: '这种茶的零售价比批发价贵。',
+      note: '副词短语，“以零售方式”。注意前置格形式：ро́зница → в ро́зницу。形容词：ро́зничный（ро́зничная цена́ 零售价）。'
+    },
+    {
+      id: 'kupit', ru: 'купи́ть', pos: 'глагол сов. в.', zh: '买，购买',
+      group: 'pay', icon: 'ic-buy',
+      ex: 'Я хочу купить подарок маме — платок или сумку.',
+      exZh: '我想给妈妈买份礼物——头巾或者包。',
+      note: '完成体，“买到”，强调结果。未完成体：покупа́ть。搭配：купи́ть что у кого / за ско́лько。'
+    },
+    {
+      id: 'prodat', ru: 'прода́ть', pos: 'глагол сов. в.', zh: '卖，出售',
+      group: 'pay', icon: 'ic-sell',
+      ex: 'Мы продали все матрёшки за один день.',
+      exZh: '我们一天之内就把所有套娃卖完了。',
+      note: '完成体，“卖掉”。未完成体：продава́ть。同根词：продаве́ц, прода́жа。搭配：прода́ть что кому́ за ско́лько。'
+    },
+    {
+      id: 'zakazat', ru: 'заказа́ть', pos: 'глагол сов. в.', zh: '订购，预订',
+      group: 'pay', icon: 'ic-order',
+      ex: 'Можно заказать доставку на дом?',
+      exZh: '可以订送货上门吗？',
+      note: '完成体，“订购、预订”。名词：зака́з。在餐厅点菜也用这个词：заказа́ть суп。'
+    },
+    {
+      id: 'oplatit', ru: 'оплати́ть', pos: 'глагол сов. в.', zh: '支付，付款',
+      group: 'pay', icon: 'ic-pay',
+      ex: 'Вы можете оплатить покупку картой или наличными.',
+      exZh: '您可以用银行卡或现金付款。',
+      note: '及物动词：оплати́ть что（оплати́ть поку́пку / счёт）。口语中也说 плати́ть за что。'
+    },
+    {
+      id: 'kassa', ru: 'ка́сса', pos: 'сущ. ж. р.', zh: '收银台；售票处',
+      group: 'pay', icon: 'ic-cashier',
+      ex: 'Пожалуйста, оплатите в кассе у выхода.',
+      exZh: '请在出口处的收银台付款。',
+      note: '“收银台；售票处”。在商店付款：оплати́ть в ка́ссе；在剧院、车站买票也在 ка́сса。'
+    },
+    {
+      id: 'chek', ru: 'чек', pos: 'сущ. м. р.', zh: '收据，小票',
+      group: 'pay', icon: 'ic-receipt',
+      ex: 'Сохраните чек: без него нельзя вернуть товар.',
+      exZh: '请保留收据：没有它将无法退货。',
+      note: '“收据、小票”。在餐厅要账单说 счёт，不是 чек。搭配：проби́ть чек, сохрани́ть чек。'
+    },
+    {
+      id: 'dogovor', ru: 'догово́р', pos: 'сущ. м. р.', zh: '合同',
+      group: 'deal', icon: 'ic-contract',
+      ex: 'Мы подписали договор с российской фирмой.',
+      exZh: '我们和一家俄罗斯公司签了合同。',
+      note: '规范重音是 догово́р（口语中可听到 до́говор，但标准语是 догово́р）。搭配：заключи́ть / подписа́ть догово́р。'
+    },
+    {
+      id: 'sdelka', ru: 'сде́лка', pos: 'сущ. ж. р.', zh: '交易，买卖',
+      group: 'deal', icon: 'ic-deal',
+      ex: 'Это была выгодная сделка для обеих сторон.',
+      exZh: '这对双方都是一笔划算的交易。',
+      note: '“交易、一笔买卖”。搭配：соверши́ть сде́лку 完成交易, вы́годная сде́лка 划算的交易。'
+    },
+    {
+      id: 'postavka', ru: 'поста́вка', pos: 'сущ. ж. р.', zh: '供货，交付',
+      group: 'deal', icon: 'ic-delivery',
+      ex: 'Поставка товара начнётся в мае.',
+      exZh: '货物供应将于五月开始。',
+      note: '“供货、交付（货物）”。动词：поста́вить / поставля́ть。搭配：поста́вка това́ра, срок поста́вки 供货期限。'
+    },
+    {
+      id: 'spros', ru: 'спрос', pos: 'сущ. м. р.', zh: '需求',
+      group: 'deal', icon: 'ic-demand',
+      ex: 'Летом спрос на мороженое всегда растёт.',
+      exZh: '夏天冰淇淋的需求总是增长。',
+      note: '“需求”。经济学术语：спрос и предложе́ние 供求。搭配：по́льзоваться спро́сом 受欢迎；спрос на что。'
+    },
+    {
+      id: 'reklama', ru: 'рекла́ма', pos: 'сущ. ж. р.', zh: '广告',
+      group: 'deal', icon: 'ic-ads',
+      ex: 'Хорошая реклама помогает продавать товар.',
+      exZh: '好的广告有助于销售商品。',
+      note: '“广告”。动词：реклами́ровать。搭配：да́ть рекла́му 登广告, рекла́ма това́ра。'
+    },
+    {
+      id: 'kachestvo', ru: 'ка́чество', pos: 'сущ. ср. р.', zh: '质量',
+      group: 'deal', icon: 'ic-quality',
+      ex: 'Качество этих платков очень высокое.',
+      exZh: '这些头巾的质量非常高。',
+      note: '“质量”。形容词：ка́чественный。搭配：высо́кое ка́чество, ка́чество жи́зни。'
+    }
+  ];
+
+  /* ------------------------------------------------------------------ */
+  /* Устойчивые сочетания: 12                                              */
+  /* ------------------------------------------------------------------ */
+  var collocs = [
+    {
+      ru: 'опто́вая торго́вля', zh: '批发贸易',
+      ex: 'Оптовая торговля позволяет компаниям продавать большие партии товара.',
+      exZh: '批发贸易使公司能够销售大批量商品。'
+    },
+    {
+      ru: 'ро́зничная торго́вля', zh: '零售贸易',
+      ex: 'В розничной торговле важен каждый покупатель.',
+      exZh: '在零售业中，每位顾客都很重要。'
+    },
+    {
+      ru: 'вы́йти на ры́нок', zh: '进入市场',
+      ex: 'Компания хочет выйти на российский рынок с новым чаем.',
+      exZh: '这家公司想用新茶叶进入俄罗斯市场。'
+    },
+    {
+      ru: 'спрос и предложе́ние', zh: '供求',
+      ex: 'Цена зависит от спроса и предложения.',
+      exZh: '价格取决于供求关系。'
+    },
+    {
+      ru: 'заключи́ть догово́р', zh: '签订合同',
+      ex: 'Мы заключили договор на поставку одежды.',
+      exZh: '我们签订了一份服装供货合同。'
+    },
+    {
+      ru: 'соверши́ть поку́пку', zh: '购物（正式）',
+      ex: 'В этом магазине можно совершить покупку за пять минут.',
+      exZh: '在这家商店五分钟就能完成购物。'
+    },
+    {
+      ru: 'оплати́ть ка́ртой', zh: '刷卡支付',
+      ex: '— Можно оплатить картой? — Конечно, можно.',
+      exZh: '可以刷卡吗？——当然可以。'
+    },
+    {
+      ru: 'сде́лать ски́дку', zh: '打折',
+      ex: 'Если вы берёте два товара, мы сделаем скидку.',
+      exZh: '如果您买两件商品，我们给您打折。'
+    },
+    {
+      ru: 'по́льзоваться спро́сом', zh: '有需求，受欢迎',
+      ex: 'Эти платки пользуются большим спросом у туристов.',
+      exZh: '这些头巾非常受游客欢迎。'
+    },
+    {
+      ru: 'цена́ растёт / па́дает', zh: '价格上涨／下跌',
+      ex: 'Цены на продукты растут, а на одежду падают.',
+      exZh: '食品价格在上涨，而服装价格在下跌。'
+    },
+    {
+      ru: 'высо́кое ка́чество', zh: '高质量',
+      ex: 'Высокое качество — лучшая реклама фирмы.',
+      exZh: '高质量是最好的广告。'
+    },
+    {
+      ru: 'торго́вая компа́ния', zh: '贸易公司',
+      ex: 'Он работает в большой торговой компании.',
+      exZh: '他在一家大型贸易公司工作。'
+    }
+  ];
+
+  /* ------------------------------------------------------------------ */
+  /* Диалог                                                              */
+  /* ------------------------------------------------------------------ */
+  var dialogue = {
+    place: 'Измайловский рынок, Москва',
+    placeZh: '伊兹迈洛沃市场 · 莫斯科',
+    level: '16 реплик · A2–B1 · 3 минуты',
+    intro: 'Ли Хуа приехала в Москву учиться и хочет привезти домой сувениры. На рынке она разговаривает с продавцом.',
+    introZh: '李华来莫斯科留学，想带些纪念品回家。在市场里，她和售货员聊了起来。',
+    speakers: {
+      lihua: { name: 'Ли Хуа', zh: '李华', role: 'покупатель', avatar: '李' },
+      seller: { name: 'Продавец', zh: '售货员', role: 'продавец', avatar: 'П' }
+    },
+    lines: [
+      {
+        who: 'seller',
+        ru: '— Здра́вствуйте! Что вы и́щете?',
+        zh: '您好！您在找什么？'
+      },
+      {
+        who: 'lihua',
+        ru: '— Здра́вствуйте! Скажи́те, пожа́луйста, ско́лько сто́ит э́та матрёшка?',
+        zh: '您好！请问这个套娃多少钱？',
+        tip: 'Ско́лько сто́ит…? 用来询问单件商品的价格；如果问复数，用 ско́лько сто́ят。'
+      },
+      {
+        who: 'seller',
+        ru: '— Э́та — больша́я, ручна́я рабо́та. Ты́сяча две́сти рубле́й.',
+        zh: '这个大的，是手工制作的。一千二百卢布。'
+      },
+      {
+        who: 'lihua',
+        ru: '— Ой, э́то немно́го доро́го для меня́. А есть что-нибу́дь подеше́вле?',
+        zh: '哎呀，这对我说有点贵。有便宜一些的吗？',
+        tip: 'подеше́вле 是 дешёвый 的比较级，“便宜一些”。'
+      },
+      {
+        who: 'seller',
+        ru: '— Коне́чно! Вот ма́ленькие матрёшки — семьсо́т рубле́й, плато́к — пятьсо́т. Есть ещё магни́ты и самова́ры.',
+        zh: '当然！这些小套娃——七百卢布，头巾——五百卢布。还有冰箱贴和茶炊。'
+      },
+      {
+        who: 'lihua',
+        ru: '— Плато́к о́чень краси́вый. А кака́я цена́, е́сли я куплю́ матрёшку и плато́к вме́сте?',
+        zh: '这条头巾很漂亮。如果我成套娃和头巾一起买，是什么价格？'
+      },
+      {
+        who: 'seller',
+        ru: '— Е́сли берёте два това́ра, я сде́лаю ски́дку де́сять проце́нтов. Полу́чится ты́сяча во́семьдесят рубле́й.',
+        zh: '如果您买两件商品，我给您打九折。一共一千零八十卢布。',
+        tip: 'ски́дка 10% = 减价 10%，中文说“打九折”。'
+      },
+      {
+        who: 'lihua',
+        ru: '— Отли́чно! Я беру́. Мо́жно оплати́ть ка́ртой?',
+        zh: '太好了！我买了。可以刷卡吗？'
+      },
+      {
+        who: 'seller',
+        ru: '— Коне́чно, мо́жно. Вот термина́л. Приложи́те ка́рту, пожа́луйста.',
+        zh: '当然可以。这是POS机。请把卡贴上。',
+        tip: 'Приложи́те ка́рту — 非接触支付：把银行卡贴近读卡器。'
+      },
+      {
+        who: 'lihua',
+        ru: '— Гото́во. А чек дади́те?',
+        zh: '好了。您会给收据吗？'
+      },
+      {
+        who: 'seller',
+        ru: '— Вот ваш чек и упако́вка, что́бы матрёшка не разби́лась. Спаси́бо за поку́пку!',
+        zh: '这是您的收据和包装，这样套娃就不会摔坏。谢谢惠顾！'
+      },
+      {
+        who: 'lihua',
+        ru: '— Спаси́бо больша́я! А где ва́ша ка́сса?',
+        zh: '非常感谢！你们的收银台在哪里？'
+      },
+      {
+        who: 'seller',
+        ru: '— Вот она́, за прила́вком. Мы принима́ем и нали́чные, и ка́рты.',
+        zh: '就在这儿，柜台后面。我们既收现金，也收银行卡。',
+        tip: 'нали́чные 只用复数形式，表示“现金”。'
+      },
+      {
+        who: 'lihua',
+        ru: '— Поня́тно. А до ско́льких вы рабо́таете?',
+        zh: '明白了。你们营业到几点？',
+        tip: 'До ско́льких…? 是询问“到几点”的固定说法。'
+      },
+      {
+        who: 'seller',
+        ru: '— С десяти́ утра́ до восьми́ ве́чера. Приходи́те ещё!',
+        zh: '从早上十点到晚上八点。欢迎再来！'
+      },
+      {
+        who: 'lihua',
+        ru: '— Обяза́тельно. До свида́ния!',
+        zh: '一定。再见！'
+      }
+    ],
+    gloss: [
+      { ru: 'подеше́вле', zh: '便宜一些' },
+      { ru: 'ски́дка 10%', zh: '打九折' },
+      { ru: 'приложи́ть ка́рту', zh: '贴卡支付' },
+      { ru: 'нали́чные', zh: '现金' },
+      { ru: 'прила́вок', zh: '柜台' },
+      { ru: 'до ско́льких', zh: '到几点' }
+    ]
+  };
+
+  /* ------------------------------------------------------------------ */
+  /* Текст для чтения                                                    */
+  /* ------------------------------------------------------------------ */
+  var reader = {
+    title: 'Торговля сегодня: рынок, магазин, интернет',
+    titleZh: '当今的贸易：市场、商店与互联网',
+    level: 'B1 · 4 абзаца · ≈ 210 слов',
+    paragraphs: [
+      {
+        ru: 'Торговля — одно из самых старых занятий человека. Тысячи лет люди ' +
+            G('обменивались', '交换') + ' товарами: кто-то продавал рыбу, кто-то покупал соль. ' +
+            'Сегодня торговля — это часть экономики каждой страны, а слово «рынок» означает уже не только место, ' +
+            'где стоят ' + G('ларьки', '小货摊') + ', но и всю систему ' + G('спроса и предложения', '供求') + '.',
+        zh: '贸易是人类最古老的行业之一。几千年来人们交换商品：有人卖鱼，有人买盐。今天，贸易是每个国家经济的一部分，而“市场”一词已经不仅指摆着货摊的地方，也指整个供求体系。'
+      },
+      {
+        ru: 'В России есть разные виды торговли. В больших супермаркетах покупатели сами берут продукты с ' +
+            G('полок', '货架') + ', а на кассе платят картой или ' + G('наличными', '现金') + '. ' +
+            'Совсем другой мир — рынки и ярмарки. Там продавец знает каждого клиента, может посоветовать и даже сделать скидку. ' +
+            'Многие туристы приезжают на Измайловский рынок в Москве за матрёшками, платками и другими сувенирами.',
+        zh: '俄罗斯有各种形式的贸易。在大型超市里，顾客自己从货架上取食品，在收银台用银行卡或现金付款。而市场和集市完全是另一个世界。在那里，售货员认识每一位顾客，会给出建议，甚至打折。许多游客专程到莫斯科的伊兹迈洛沃市场购买套娃、头巾和其他纪念品。'
+      },
+      {
+        ru: 'Между странами идёт ' + G('оптовая торговля', '批发贸易') + '. Компании заключают договоры, ' +
+            'договариваются о поставке и цене, а потом товар приходит на ' + G('склад', '仓库') + ' или в магазин. ' +
+            'В этой работе важны не только деньги, но и качество и ' + G('репутация', '声誉') + ': если фирма ' +
+            G('поставляет', '供货') + ' товар вовремя, у неё будет больше клиентов и выше спрос.',
+        zh: '国家之间进行批发贸易。公司签订合同，就供货和价格达成一致，之后货物运到仓库或商店。这项工作中重要的不只是钱，还有质量和信誉：如果公司按时供货，它就会有更多客户和更高的需求。'
+      },
+      {
+        ru: 'Интернет тоже изменил торговлю. Теперь можно заказать одежду, обувь или электронику из другой страны ' +
+            'и получить доставку через неделю. Но даже в онлайн-магазине мы ищем хорошую цену, читаем ' +
+            G('отзывы', '评价') + ' и радуемся скидке. Торговля остаётся разговором — о цене, качестве и ' +
+            G('доверии', '信任') + '.',
+        zh: '互联网也改变了贸易。现在可以从另一个国家订购衣服、鞋子或电子产品，一周后收货。但即使在网店里，我们仍然会寻找好价格、看评价，并为折扣而高兴。贸易始终是一场对话——关于价格、质量和信任。'
+      }
+    ],
+    gloss: [
+      { ru: 'обмениваться (чем)', zh: '交换（某物）' },
+      { ru: 'спрос и предложение', zh: '供求' },
+      { ru: 'наличные', zh: '现金（复数）' },
+      { ru: 'оптовая торговля', zh: '批发贸易' },
+      { ru: 'склад', zh: '仓库' },
+      { ru: 'репутация', zh: '声誉' },
+      { ru: 'поставлять', zh: '供应，供货' },
+      { ru: 'отзыв', zh: '评价，评论' },
+      { ru: 'доверие', zh: '信任' }
+    ],
+    questions: [
+      {
+        q: 'Что сегодня означает слово «рынок», по тексту?',
+        options: [
+          'Только место, где стоят ларьки',
+          'Только экономическую систему',
+          'И место торговли, и систему спроса и предложения',
+          'Только интернет-магазин'
+        ],
+        correct: 2,
+        explain: 'В тексте: слово «рынок» означает уже не только место, где стоят ларьки, но и всю систему спроса и предложения.'
+      },
+      {
+        q: 'Чем рынок отличается от супермаркета?',
+        options: [
+          'На рынке нет скидок',
+          'На рынке продавец знает клиента и может посоветовать',
+          'В супермаркете нельзя платить картой',
+          'На рынке продают только матрёшки'
+        ],
+        correct: 1,
+        explain: 'В супермаркете покупатели сами берут продукты, а на рынке продавец знает каждого клиента и может посоветовать.'
+      },
+      {
+        q: 'Почему фирме важны качество и репутация?',
+        options: [
+          'Чтобы получать больше клиентов и иметь высокий спрос',
+          'Чтобы не платить налоги',
+          'Чтобы не делать рекламу',
+          'Чтобы закрыть магазин'
+        ],
+        correct: 0,
+        explain: 'Текст говорит: если фирма поставляет товар вовремя, у неё будет больше клиентов и выше спрос.'
+      },
+      {
+        q: 'Что в интернет-торговле осталось таким же, как в обычной?',
+        options: [
+          'Доставка товара',
+          'Склад и договор',
+          'Поиск хорошей цены, отзывы и радость от скидки',
+          'Разговор с продавцом'
+        ],
+        correct: 2,
+        explain: 'Даже в онлайн-магазине мы ищем хорошую цену, читаем отзывы и радуемся скидке.'
+      }
+    ]
+  };
+
+  /* ------------------------------------------------------------------ */
+  /* Дополнительные слова                                                */
+  /* ------------------------------------------------------------------ */
+  var extras = [
+    { ru: 'суперма́ркет', pos: 'сущ. м. р.', zh: '超市', ex: 'В супермаркете большой выбор продуктов.', exZh: '超市里食品选择很多。' },
+    { ru: 'компа́ния', pos: 'сущ. ж. р.', zh: '公司', ex: 'Это китайская торговая компания.', exZh: '这是一家中国贸易公司。' },
+    { ru: 'клие́нт', pos: 'сущ. м. р.', zh: '客户', ex: 'Наш клиент хочет купить сто платков.', exZh: '我们的客户想买一百条头巾。' },
+    { ru: 'конкуре́нция', pos: 'сущ. ж. р.', zh: '竞争', ex: 'На рынке одежды сейчас большая конкуренция.', exZh: '服装市场竞争激烈。' },
+    { ru: 'вы́ставка', pos: 'сущ. ж. р.', zh: '展览会', ex: 'На выставке фирмы показывают новые товары.', exZh: '展会上各公司展示新产品。' },
+    { ru: 'счёт', pos: 'сущ. м. р.', zh: '账单', ex: 'Официант принёс счёт.', exZh: '服务员拿来了账单。' },
+    { ru: 'нали́чные', pos: 'сущ. мн. ч.', zh: '现金', ex: 'У вас есть наличные?', exZh: '您有现金吗？' },
+    { ru: 'банко́вская\u00A0ка́рта', pos: 'словосочетание', zh: '银行卡', ex: 'Можно оплатить банковской картой?', exZh: '可以用银行卡付款吗？' },
+    { ru: 'килогра́мм', pos: 'сущ. м. р.', zh: '公斤', ex: 'Дайте, пожалуйста, килограмм яблок.', exZh: '请给我一公斤苹果。' },
+    { ru: 'шту́ка', pos: 'сущ. ж. р.', zh: '个，件（单位）', ex: 'Дайте две штуки, пожалуйста.', exZh: '请给我两个。' }
+  ];
+
+  /* ------------------------------------------------------------------ */
+  /* Задания с пропуском (контекст)                                      */
+  /* ------------------------------------------------------------------ */
+  var gaps = [
+    {
+      id: 'g1', wordId: 'skidka',
+      sentence: 'Зимой на эту куртку была большая ___ — двадцать процентов.',
+      options: ['скидка', 'цена', 'стоимость', 'касса'],
+      correct: 0,
+      zh: '冬天这件夹克有很大的折扣——百分之二十。',
+      explain: 'Скидка — это снижение цены. «Скидка 20%» значит, что товар стоит на 20% меньше. Цена и стоимость — это просто цена товара.'
+    },
+    {
+      id: 'g2', wordId: 'stoimost',
+      sentence: 'Сколько ___ эта книга?',
+      options: ['стоит', 'стоят', 'стоить', 'стоять'],
+      correct: 0,
+      zh: '这本书多少钱？',
+      explain: 'О цене одного предмета спрашиваем: «Сколько стоит…?». О нескольких предметах: «Сколько стоят…?».'
+    },
+    {
+      id: 'g3', wordId: 'optom',
+      sentence: 'Эта фирма продаёт чай ___ — большими партиями.',
+      options: ['оптом', 'в розницу', 'дорого', 'быстро'],
+      correct: 0,
+      zh: '这家公司批发卖茶——大批量地卖。',
+      explain: 'Оптом — значит большими партиями, для магазинов и компаний. В розницу — по одному товару, для обычных покупателей.'
+    },
+    {
+      id: 'g4', wordId: 'oplatit',
+      sentence: 'Покупатель оплатил покупку ___.',
+      options: ['картой', 'карта', 'карты', 'карту'],
+      correct: 0,
+      zh: '顾客用银行卡支付了购物款。',
+      explain: 'Глагол оплатить требует творительного падежа: оплатить чем? — картой, наличными.'
+    },
+    {
+      id: 'g5', wordId: 'chek',
+      sentence: 'Продавец пробил ___ и отдал его покупателю.',
+      options: ['чек', 'счёт', 'договор', 'товар'],
+      correct: 0,
+      zh: '售货员打了收据，交给了顾客。',
+      explain: 'Чек — это бумага об оплате, её дают в магазине. Счёт — документ, где написана сумма к оплате (например, в кафе).'
+    },
+    {
+      id: 'g6', wordId: 'spros',
+      sentence: 'Перед Новым годом в магазинах большой ___ на подарки.',
+      options: ['спрос', 'предложение', 'заказ', 'чек'],
+      correct: 0,
+      zh: '新年前商店里对礼物的需求很大。',
+      explain: 'Спрос — это сколько товара хотят купить люди. Предложение — сколько товара есть на рынке.'
+    },
+    {
+      id: 'g7', wordId: 'suvenir',
+      sentence: 'На ярмарке продают ___ : матрёшки, магниты, платки.',
+      options: ['сувениры', 'продукты', 'упаковку', 'обувь'],
+      correct: 0,
+      zh: '集市上卖纪念品：套娃、冰箱贴、头巾。',
+      explain: 'Сувенир — вещь на память о поездке. Матрёшки, магниты и платки — типичные русские сувениры.'
+    },
+    {
+      id: 'g8', wordId: 'dogovor',
+      sentence: 'Мы подписали ___ с китайской компанией.',
+      options: ['договор', 'чек', 'цену', 'скидку'],
+      correct: 0,
+      zh: '我们和一家中国公司签了合同。',
+      explain: 'Договор — официальный документ о сотрудничестве: подписать / заключить договор.'
+    },
+    {
+      id: 'g9', wordId: 'tsena',
+      sentence: 'Эта рубашка мне не подходит: у неё высокая ___.',
+      options: ['цена', 'скидка', 'касса', 'упаковка'],
+      correct: 0,
+      zh: '这件衬衫不适合我：它的价格很高。',
+      explain: 'Высокая цена — дорого. Антоним: низкая цена. Скидка — это снижение цены.'
+    },
+    {
+      id: 'g10', wordId: 'prodavets',
+      sentence: '___ помогает покупателю выбрать товар.',
+      options: ['Продавец', 'Покупатель', 'Курьер', 'Директор'],
+      correct: 0,
+      zh: '售货员帮助顾客挑选商品。',
+      explain: 'Продавец работает в магазине и помогает выбрать. Покупатель — тот, кто покупает; курьер — тот, кто доставляет.'
+    },
+    {
+      id: 'g11', wordId: 'upakovka',
+      sentence: 'Куртка была в красивой ___, поэтому её приятно дарить.',
+      options: ['упаковке', 'скидке', 'кассе', 'цене'],
+      correct: 0,
+      zh: '这件夹克有漂亮的包装，所以很适合送人。',
+      explain: 'В упаковке — предложный падеж от «упаковка». Упаковка — коробка, бумага или пакет, в которых продают товар.'
+    },
+    {
+      id: 'g12', wordId: 'zakazat',
+      sentence: 'Менеджер принял ___ от клиента.',
+      options: ['заказ', 'чек', 'скидку', 'рекламу'],
+      correct: 0,
+      zh: '经理接到了客户的订单。',
+      explain: 'Принять заказ — значит получить просьбу клиента о покупке или доставке.'
+    }
+  ];
+
+  /* ------------------------------------------------------------------ */
+  /* Режимы теста                                                        */
+  /* ------------------------------------------------------------------ */
+  var modes = [
+    {
+      id: 'mixed',
+      ru: 'Смешанный',
+      zh: '综合',
+      desc: 'Значения, картинки и контекст',
+      detail: '10 вопросов'
+    },
+    {
+      id: 'vocab',
+      ru: 'Лексика',
+      zh: '词汇',
+      desc: 'Слово ↔ перевод, картинки',
+      detail: '10 вопросов'
+    },
+    {
+      id: 'context',
+      ru: 'Контекст',
+      zh: '语境',
+      desc: 'Предложения с пропуском',
+      detail: '10 вопросов'
+    }
+  ];
+
+  return {
+    groups: groups,
+    words: words,
+    collocs: collocs,
+    dialogue: dialogue,
+    reader: reader,
+    extras: extras,
+    gaps: gaps,
+    modes: modes,
+    stats: {
+      words: words.length,
+      collocs: collocs.length,
+      lines: dialogue.lines.length
+    }
+  };
+})();
+
+</script>
+<script>
+/* ==========================================================================
+   Торговля · 贸易 — логика сайта
+   Без библиотек и сборки. Всё работает локально, в том числе с file://
+   ========================================================================== */
+(function () {
+  'use strict';
+
+  var D = window.SITE_DATA;
+  var ICON = window.ICONS.svg;
+
+  var $ = function (sel, root) { return (root || document).querySelector(sel); };
+  var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
+
+  var stripStress = function (s) { return String(s).replace(/\u0301/g, ''); };
+
+  var esc = function (s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  };
+
+  function shuffle(arr) {
+    for (var i = arr.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
+    }
+    return arr;
+  }
+
+  function sample(arr, n) { return shuffle(arr.slice()).slice(0, n); }
+
+  var storage = {
+    get: function (key, fallback) {
+      try {
+        var raw = window.localStorage.getItem(key);
+        return raw === null ? fallback : JSON.parse(raw);
+      } catch (e) { return fallback; }
+    },
+    set: function (key, value) {
+      try { window.localStorage.setItem(key, JSON.stringify(value)); } catch (e) { /* приватный режим */ }
+    }
+  };
+
+  var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ------------------------------------------------------------------ */
+  /* Озвучивание (встроенный синтез речи браузера)                       */
+  /* ------------------------------------------------------------------ */
+  var TTS = (function () {
+    var supported = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+    var voice = null;
+
+    function pickVoice() {
+      if (!supported) return;
+      var voices = window.speechSynthesis.getVoices() || [];
+      voice = voices.filter(function (v) { return /^ru/i.test(v.lang); })[0] || null;
+    }
+
+    if (supported) {
+      pickVoice();
+      if (typeof window.speechSynthesis.addEventListener === 'function') {
+        window.speechSynthesis.addEventListener('voiceschanged', pickVoice);
+      } else {
+        window.speechSynthesis.onvoiceschanged = pickVoice;
+      }
+    }
+
+    function speak(text, opts) {
+      if (!supported || !text) return null;
+      opts = opts || {};
+      try { window.speechSynthesis.cancel(); } catch (e) { /* ignore */ }
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = 'ru-RU';
+      u.rate = opts.rate || 0.92;
+      u.pitch = 1;
+      if (voice) u.voice = voice;
+      if (opts.onend) u.onend = opts.onend;
+      u.onerror = function (event) {
+        var type = event && event.error;
+        if (type && type !== 'interrupted' && type !== 'canceled') warnTts();
+        if (opts.onerror) opts.onerror(event);
+      };
+      window.speechSynthesis.speak(u);
+      return u;
+    }
+
+    function stop() {
+      if (supported) { try { window.speechSynthesis.cancel(); } catch (e) { /* ignore */ } }
+    }
+
+    return { supported: supported, speak: speak, stop: stop, voice: function () { return voice; } };
+  })();
+
+  if (!TTS.supported) {
+    document.body.classList.add('no-tts');
+    var note = $('#tts-note');
+    if (note) note.hidden = false;
+  }
+
+  var ttsWarned = false;
+  function warnTts() {
+    if (ttsWarned) return;
+    ttsWarned = true;
+    var el = $('#tts-note');
+    if (el) el.hidden = false;
+  }
+
+  function speakerIcon(cls) {
+    return '<svg class="ic ' + (cls || '') + '" aria-hidden="true" focusable="false"><use href="#ui-speaker"></use></svg>';
+  }
+
+  function icon(id, cls) {
+    return '<svg class="ic ' + (cls || '') + '" aria-hidden="true" focusable="false"><use href="#' + id + '"></use></svg>';
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Данные                                                              */
+  /* ------------------------------------------------------------------ */
+  var WORDS = D.words.map(function (w) {
+    return {
+      id: w.id, ru: w.ru, plain: stripStress(w.ru), pos: w.pos, zh: w.zh,
+      group: w.group, icon: w.icon, ex: w.ex, exZh: w.exZh, note: w.note
+    };
+  });
+
+  var GROUP = {};
+  D.groups.forEach(function (g) { GROUP[g.id] = g; });
+
+  var WORD_BY_ID = {};
+  WORDS.forEach(function (w) { WORD_BY_ID[w.id] = w; });
+
+  /* ------------------------------------------------------------------ */
+  /* Прогресс: выученные слова                                           */
+  /* ------------------------------------------------------------------ */
+  var Learned = {
+    ids: new Set(storage.get('torgovlya:learned', [])),
+    has: function (id) { return this.ids.has(id); },
+    toggle: function (id) {
+      if (this.ids.has(id)) this.ids.delete(id); else this.ids.add(id);
+      storage.set('torgovlya:learned', Array.from(this.ids));
+      this.update();
+    },
+    count: function () {
+      return WORDS.filter(function (w) { return Learned.ids.has(w.id); }).length;
+    },
+    update: function () {
+      var n = this.count();
+      var total = WORDS.length;
+      var countEl = $('#learned-count');
+      var fillEl = $('#learned-fill');
+      if (countEl) countEl.textContent = n;
+      if (fillEl) fillEl.style.width = (total ? (n / total) * 100 : 0) + '%';
+    }
+  };
+
+  /* ------------------------------------------------------------------ */
+  /* Отрисовка: первый экран и схема группы                              */
+  /* ------------------------------------------------------------------ */
+  function renderHeroArt() {
+    var host = $('#hero-art');
+    if (!host) return;
+    host.innerHTML =
+      '<svg viewBox="0 0 720 520" role="img" aria-label="Рыночный прилавок: навес, ящик с яблоками, ценники, монеты и сумка">' +
+        '<use href="#hero-market"></use>' +
+      '</svg>';
+  }
+
+  function renderField() {
+    var branches = D.groups.map(function (g, i) {
+      var ws = WORDS.filter(function (w) { return w.group === g.id; });
+      var examples = ws.slice(0, 3).map(function (w) { return w.ru; }).join(' · ');
+      return '' +
+        '<button class="branch" type="button" data-g="' + g.id + '" data-filter="' + g.id + '">' +
+          '<span class="branch__idx">0' + (i + 1) + '</span>' +
+          '<span class="branch__main">' +
+            '<span class="branch__ru">' + g.ru + '</span>' +
+            '<span class="branch__zh" lang="zh-CN">' + g.zh + '</span>' +
+          '</span>' +
+          '<span class="branch__count">' + ws.length + ' слов</span>' +
+          '<span class="branch__ex">' + examples + '</span>' +
+        '</button>';
+    }).join('');
+
+    $('#field').innerHTML =
+      '<div class="field-core">' +
+        '<div>' +
+          '<p class="field-core__label">гипероним · 上位词</p>' +
+          '<p class="field-core__ru" lang="ru">торго́вля</p>' +
+          '<p class="field-core__zh" lang="zh-CN">贸易 · 商业</p>' +
+          '<p class="field-core__def">Обмен товарами и услугами между людьми, компаниями и странами.' +
+            '<span lang="zh-CN">人与人、公司与国家之间的商品和服务交换。</span></p>' +
+        '</div>' +
+        '<div class="field-core__foot">' +
+          '<p class="field-core__forms"><b>торгова́ть</b> · <b>торго́вый</b> · <b>торго́вец</b> · <b>торго́вый центр</b></p>' +
+          '<p class="field-core__note">5 подгрупп · 30 слов · 12 сочетаний</p>' +
+        '</div>' +
+      '</div>' +
+      '<div class="field-branches">' + branches + '</div>';
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Словарь                                                             */
+  /* ------------------------------------------------------------------ */
+  var state = { filter: 'all', query: '' };
+
+  function normalize(s) {
+    return stripStress(String(s)).toLowerCase().replace(/\s+/g, ' ').trim();
+  }
+
+  function matchesQuery(w, q) {
+    if (!q) return true;
+    var hay = normalize([w.ru, w.zh, w.ex, w.exZh, w.note, w.pos].join(' '));
+    return hay.indexOf(q) !== -1;
+  }
+
+  function renderFilters() {
+    var chips = [{ id: 'all', label: 'Все', n: WORDS.length }].concat(
+      D.groups.map(function (g) {
+        return { id: g.id, label: g.ru, n: WORDS.filter(function (w) { return w.group === g.id; }).length };
+      })
+    );
+    $('#vocab-filters').innerHTML = chips.map(function (c) {
+      return '<button class="filter-chip" type="button" data-filter="' + c.id + '" aria-pressed="' + (state.filter === c.id) + '">' +
+        c.label + '<span class="filter-chip__n">' + c.n + '</span>' +
+      '</button>';
+    }).join('');
+  }
+
+  function wordCard(w) {
+    var g = GROUP[w.group];
+    var learned = Learned.has(w.id);
+    var say = esc(w.plain + '. ' + stripStress(w.ex));
+    return '' +
+      '<article class="word-card' + (learned ? ' is-learned' : '') + '" data-g="' + w.group + '" data-id="' + w.id + '">' +
+        '<div class="word-card__media">' +
+          ICON(w.icon, 'ic') +
+          '<span class="word-card__tag">' + g.ru + '</span>' +
+        '</div>' +
+        '<div class="word-card__body">' +
+          '<div class="word-card__head">' +
+            '<h3 class="word-card__ru" lang="ru">' + w.ru + '</h3>' +
+            '<span class="word-card__pos">' + w.pos + '</span>' +
+          '</div>' +
+          '<p class="word-card__zh" lang="zh-CN">' + w.zh + '</p>' +
+          '<p class="word-card__ex" lang="ru">' + w.ex + '</p>' +
+          '<p class="word-card__exzh" lang="zh-CN">' + w.exZh + '</p>' +
+          '<details class="word-card__note">' +
+            '<summary>Комментарий · 用法</summary>' +
+            '<p lang="zh-CN">' + w.note + '</p>' +
+          '</details>' +
+        '</div>' +
+        '<div class="word-card__actions">' +
+          '<button class="speak" type="button" data-say="' + say + '" aria-label="Прослушать слово и пример: ' + esc(w.plain) + '">' + speakerIcon() + '</button>' +
+          '<button class="learn-btn" type="button" aria-pressed="' + learned + '">' + (learned ? 'Выучено ✓' : 'Выучил') + '</button>' +
+        '</div>' +
+      '</article>';
+  }
+
+  function renderVocab() {
+    var q = normalize(state.query);
+    var list = WORDS.filter(function (w) {
+      return (state.filter === 'all' || w.group === state.filter) && matchesQuery(w, q);
+    });
+    $('#word-grid').innerHTML = list.map(wordCard).join('');
+    $('#vocab-empty').hidden = list.length > 0;
+    $('#learned-total').textContent = WORDS.length;
+    Learned.update();
+  }
+
+  function setFilter(id, scrollToVocab) {
+    var hadChipFocus = document.activeElement && document.activeElement.classList.contains('filter-chip');
+    state.filter = id;
+    renderFilters();
+    renderVocab();
+    if (hadChipFocus) {
+      var newChip = $('.filter-chip[data-filter="' + id + '"]');
+      if (newChip) newChip.focus({ preventScroll: true });
+    }
+    if (scrollToVocab) {
+      var target = $('#vocab');
+      if (target) target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
+    }
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Сочетания и дополнительные слова                                    */
+  /* ------------------------------------------------------------------ */
+  function renderCollocs() {
+    $('#colloc-grid').innerHTML = D.collocs.map(function (c, i) {
+      return '' +
+        '<article class="colloc" data-num="' + (i + 1 < 10 ? '0' : '') + (i + 1) + '">' +
+          '<p class="colloc__ru" lang="ru">' + c.ru + '</p>' +
+          '<p class="colloc__zh" lang="zh-CN">' + c.zh + '</p>' +
+          '<p class="colloc__ex" lang="ru">' + c.ex + '</p>' +
+          '<p class="colloc__exzh" lang="zh-CN">' + c.exZh + '</p>' +
+        '</article>';
+    }).join('');
+  }
+
+  function renderExtras() {
+    $('#extras-body').innerHTML = D.extras.map(function (x) {
+      return '<tr>' +
+        '<td lang="ru">' + x.ru + '</td>' +
+        '<td>' + x.pos + '</td>' +
+        '<td lang="zh-CN">' + x.zh + '</td>' +
+        '<td lang="ru">' + x.ex + '<span lang="zh-CN">' + x.exZh + '</span></td>' +
+      '</tr>';
+    }).join('');
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Диалог                                                              */
+  /* ------------------------------------------------------------------ */
+  var dialogue = {
+    playing: false,
+    index: -1,
+    stress: true,
+    zh: true
+  };
+
+  function renderDialogue() {
+    var d = D.dialogue;
+    $('#dialogue-place').textContent = d.place;
+    $('#dialogue-level').textContent = d.level;
+    $('#dialogue-intro').textContent = d.intro;
+    $('#dialogue-intro-zh').textContent = d.introZh;
+
+    $('#dialogue-lines').innerHTML = d.lines.map(function (line, i) {
+      var sp = d.speakers[line.who];
+      var plain = stripStress(line.ru);
+      return '' +
+        '<div class="line line--' + line.who + '" data-line="' + i + '">' +
+          '<span class="avatar" aria-hidden="true">' + sp.avatar + '</span>' +
+          '<div class="bubble">' +
+            '<div class="bubble__top">' +
+              '<span class="bubble__name">' + sp.name + ' <span lang="zh-CN">' + sp.zh + '</span></span>' +
+              '<button class="speak speak--sm" type="button" data-say="' + esc(plain) + '" aria-label="Прослушать реплику ' + (i + 1) + '">' +
+                speakerIcon() +
+              '</button>' +
+            '</div>' +
+            '<p class="bubble__ru" lang="ru" data-stressed="' + esc(line.ru) + '" data-plain="' + esc(plain) + '">' + line.ru + '</p>' +
+            '<p class="bubble__zh" lang="zh-CN">' + line.zh + '</p>' +
+            (line.tip ? '<p class="bubble__tip">' + icon('ui-bulb') + '<span lang="zh-CN">' + line.tip + '</span></p>' : '') +
+          '</div>' +
+        '</div>';
+    }).join('');
+
+    $('#dialogue-gloss').innerHTML =
+      '<p class="glossary__title">Слова и выражения из диалога · 对话中的词语</p>' +
+      d.gloss.map(function (g) {
+        return '<span class="gloss-chip"><b lang="ru">' + g.ru + '</b><span lang="zh-CN">' + g.zh + '</span></span>';
+      }).join('');
+  }
+
+  function setDialogueZh(on) {
+    dialogue.zh = on;
+    var box = $('#dialogue');
+    box.classList.toggle('hide-zh', !on);
+    var btn = $('#toggle-dialogue-zh');
+    btn.setAttribute('aria-pressed', String(on));
+  }
+
+  function setStress(on) {
+    dialogue.stress = on;
+    $$('.bubble__ru').forEach(function (p) {
+      p.textContent = on ? p.getAttribute('data-stressed') : p.getAttribute('data-plain');
+    });
+    $('#toggle-stress').setAttribute('aria-pressed', String(on));
+  }
+
+  function highlightLine(idx) {
+    $$('.line').forEach(function (line, i) {
+      line.classList.toggle('is-playing', i === idx);
+    });
+    var active = $('.line[data-line="' + idx + '"]');
+    if (active) {
+      var r = active.getBoundingClientRect();
+      if (r.top < 90 || r.bottom > window.innerHeight - 40) {
+        active.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'center' });
+      }
+    }
+  }
+
+  function stopDialogue() {
+    dialogue.playing = false;
+    TTS.stop();
+    highlightLine(-1);
+    var btn = $('#play-dialogue');
+    if (btn) {
+      btn.setAttribute('aria-pressed', 'false');
+      var label = btn.querySelector('span');
+      if (label) label.textContent = 'Прослушать диалог';
+    }
+  }
+
+  function playDialogue() {
+    if (!TTS.supported) return;
+    if (dialogue.playing) { stopDialogue(); return; }
+
+    dialogue.playing = true;
+    dialogue.index = -1;
+    var btn = $('#play-dialogue');
+    btn.setAttribute('aria-pressed', 'true');
+    btn.querySelector('span').textContent = 'Остановить';
+
+    function next() {
+      if (!dialogue.playing) return;
+      dialogue.index += 1;
+      if (dialogue.index >= D.dialogue.lines.length) { stopDialogue(); return; }
+      var idx = dialogue.index;
+      highlightLine(idx);
+      var text = stripStress(D.dialogue.lines[idx].ru).replace(/^—\s*/, '');
+      TTS.speak(text, {
+        rate: 0.9,
+        onend: function () { if (dialogue.playing) window.setTimeout(next, 240); },
+        onerror: function () { stopDialogue(); }
+      });
+    }
+    next();
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Текст и вопросы к нему                                              */
+  /* ------------------------------------------------------------------ */
+  function renderReader() {
+    var r = D.reader;
+    $('#reader-title').textContent = r.title;
+    $('#reader-title-zh').textContent = r.titleZh;
+    $('#reader-level').textContent = r.level;
+
+    $('#reader-body').innerHTML = r.paragraphs.map(function (p) {
+      return '<div class="para">' +
+        '<p class="para__ru" lang="ru">' + p.ru + '</p>' +
+        '<p class="para__zh" lang="zh-CN">' + p.zh + '</p>' +
+      '</div>';
+    }).join('');
+
+    $('#reader-gloss').innerHTML =
+      '<p class="glossary__title">Слова к тексту · 文中词语</p>' +
+      r.gloss.map(function (g) {
+        return '<span class="gloss-chip"><b lang="ru">' + g.ru + '</b><span lang="zh-CN">' + g.zh + '</span></span>';
+      }).join('');
+  }
+
+  function setReaderZh(on) {
+    var reader = $('#reader');
+    reader.classList.toggle('show-zh', on);
+    var btn = $('#toggle-text-zh');
+    btn.setAttribute('aria-pressed', String(on));
+    btn.querySelector('span').textContent = on ? 'Скрыть перевод' : 'Показать перевод';
+  }
+
+  var checkState = { right: 0, answered: 0 };
+
+  function renderCheck() {
+    $('#check-questions').innerHTML = D.reader.questions.map(function (q, qi) {
+      return '<div class="check-q" data-q="' + qi + '">' +
+        '<p class="check-q__title"><span class="check-q__num">' + (qi + 1) + '.</span><span>' + q.q + '</span></p>' +
+        '<div class="check-opts">' +
+          q.options.map(function (o, oi) {
+            return '<button class="check-opt" type="button" data-qi="' + qi + '" data-oi="' + oi + '">' + o + '</button>';
+          }).join('') +
+        '</div>' +
+        '<p class="check-fb" id="check-fb-' + qi + '" aria-live="polite"></p>' +
+      '</div>';
+    }).join('');
+  }
+
+  function answerCheck(btn) {
+    var qi = Number(btn.dataset.qi);
+    var oi = Number(btn.dataset.oi);
+    var q = D.reader.questions[qi];
+    var box = $('.check-q[data-q="' + qi + '"]');
+    if (!q || !box || box.dataset.done) return;
+    box.dataset.done = '1';
+
+    var ok = oi === q.correct;
+    var opts = $$('.check-opt', box);
+    opts.forEach(function (b, i) {
+      b.disabled = true;
+      if (i === q.correct) b.classList.add('is-correct');
+      else if (i === oi) b.classList.add('is-wrong');
+      else b.classList.add('is-dim');
+    });
+
+    var fb = $('#check-fb-' + qi);
+    fb.classList.add('is-shown', ok ? 'is-ok' : 'is-bad');
+    fb.innerHTML = (ok ? '<b>Верно.</b> ' : '<b>Не совсем.</b> Правильный ответ: «' + q.options[q.correct] + '». ') + q.explain;
+
+    checkState.answered += 1;
+    if (ok) checkState.right += 1;
+    $('#check-score').innerHTML = 'Верно: ' + checkState.right + ' / ' + checkState.answered +
+      ' <span lang="zh-CN">· 正确 ' + checkState.right + ' 题</span>';
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Тест                                                                */
+  /* ------------------------------------------------------------------ */
+  var KEYS = ['А', 'Б', 'В', 'Г'];
+
+  var Quiz = {
+    mode: 'mixed',
+    qs: [],
+    i: 0,
+    score: 0,
+    answers: [],
+    locked: false,
+    fromRetry: false
+  };
+
+  function speakerBtn(w) {
+    return '<button class="speak" type="button" data-say="' + esc(w.plain) + '" aria-label="Прослушать слово">' + speakerIcon() + '</button>';
+  }
+
+  /* Похожи ли китайские переводы: не ставим в один вопрос «集市» и «市场, 集市» */
+  function zhSimilar(a, b) {
+    var A = String(a).replace(/[，,、；;\s（）()]/g, '');
+    var B = String(b).replace(/[，,、；;\s（）()]/g, '');
+    if (!A || !B) return false;
+    if (A === B) return true;
+    for (var i = 0; i < A.length - 1; i++) {
+      if (B.indexOf(A.slice(i, i + 2)) !== -1) return true;
+    }
+    return false;
+  }
+
+  function pickDistractors(w) {
+    var others = WORDS.filter(function (x) { return x.id !== w.id; });
+    var notSimilar = function (x) { return !zhSimilar(x.zh, w.zh); };
+    var same = shuffle(others.filter(function (x) { return x.group === w.group && notSimilar(x); }));
+    var rest = shuffle(others.filter(function (x) { return x.group !== w.group && notSimilar(x); }));
+    var pool = same.concat(rest);
+    if (pool.length < 3) pool = pool.concat(shuffle(others.filter(notSimilar)));
+    return pool.slice(0, 3);
+  }
+
+  function buildMeaning(w) {
+    var distractors = pickDistractors(w).map(function (x) { return x.zh; });
+    return {
+      type: 'meaning',
+      kind: 'Лексика',
+      typeName: 'значение слова',
+      stem: 'Что значит слово?',
+      promptHtml: '<span class="q-word" lang="ru">' + w.ru + '</span>' + speakerBtn(w),
+      options: shuffle([{ text: w.zh, ok: true }].concat(distractors.map(function (t) { return { text: t, ok: false }; }))),
+      explain: w.note,
+      short: w.ru + ' · ' + w.zh,
+      resultTitle: '<span lang="ru">' + w.ru + '</span>',
+      resultSub: 'значение слова',
+      correctText: w.zh
+    };
+  }
+
+  function buildReverse(w) {
+    var distractors = pickDistractors(w).map(function (x) { return x.ru; });
+    return {
+      type: 'reverse',
+      kind: 'Лексика',
+      typeName: 'перевод на русский',
+      stem: 'Как сказать по-русски?',
+      /* Без кнопки озвучивания: аудио выдало бы правильный ответ */
+      promptHtml: '<span class="q-zh" lang="zh-CN">' + w.zh + '</span>',
+      options: shuffle([{ text: w.ru, ok: true }].concat(distractors.map(function (t) { return { text: t, ok: false }; }))),
+      explain: w.note,
+      short: w.zh + ' · ' + w.ru,
+      resultTitle: '<span lang="zh-CN">' + w.zh + '</span>',
+      resultSub: 'перевод на русский',
+      correctText: w.ru
+    };
+  }
+
+  function buildImage(w) {
+    var distractors = pickDistractors(w).map(function (x) { return x.ru; });
+    return {
+      type: 'image',
+      kind: 'Картинки',
+      typeName: 'что на картинке',
+      stem: 'Что на картинке?',
+      promptHtml: '<div class="q-media" data-g="' + w.group + '" role="img" aria-label="Иллюстрация к заданию">' + ICON(w.icon, 'ic') + '</div>',
+      options: shuffle([{ text: w.ru, ok: true }].concat(distractors.map(function (t) { return { text: t, ok: false }; }))),
+      explain: w.note,
+      short: w.ru + ' · ' + w.zh,
+      resultTitle: '<span class="result-thumb" data-g="' + w.group + '">' + ICON(w.icon, 'ic') + '</span><span lang="ru">' + w.ru + '</span>',
+      resultSub: 'картинка',
+      correctText: w.ru
+    };
+  }
+
+  function buildGap(g) {
+    var blank = '<span class="blank" role="img" aria-label="пропуск"></span>';
+    var options = g.options.map(function (t, i) { return { text: t, ok: i === g.correct }; });
+    return {
+      type: 'gap',
+      kind: 'Контекст',
+      typeName: 'слово в предложении',
+      stem: 'Вставьте пропущенное слово',
+      promptHtml: '<p class="q-sentence" lang="ru">' + g.sentence.replace('___', blank) + '</p>',
+      options: shuffle(options),
+      explain: g.explain,
+      short: g.sentence.replace('___', '…'),
+      resultTitle: '<span lang="ru">' + g.sentence.replace('___', '…') + '</span>',
+      resultSub: 'пропуск в предложении',
+      correctText: g.options[g.correct],
+      fullRu: g.sentence.replace('___', g.options[g.correct]),
+      fullZh: g.zh
+    };
+  }
+
+  function pickQuestions(mode) {
+    if (mode === 'context') {
+      return sample(D.gaps, 10).map(buildGap);
+    }
+    var words = shuffle(WORDS.slice());
+    if (mode === 'vocab') {
+      return shuffle(
+        words.slice(0, 5).map(buildMeaning)
+          .concat(words.slice(5, 8).map(buildReverse))
+          .concat(words.slice(8, 10).map(buildImage))
+      );
+    }
+    return shuffle(
+      words.slice(0, 3).map(buildMeaning)
+        .concat(words.slice(3, 5).map(buildReverse))
+        .concat(words.slice(5, 7).map(buildImage))
+        .concat(sample(D.gaps, 3).map(buildGap))
+    );
+  }
+
+  function updateQuizBest() {
+    var best = storage.get('torgovlya:best', null);
+    var el = $('#quiz-best');
+    if (!el) return;
+    el.innerHTML = best === null ? '' : 'Лучший результат: <b>' + best + '%</b> · 最好成绩';
+  }
+
+  function renderQuizModes() {
+    $('#quiz-modes').innerHTML = D.modes.map(function (m) {
+      return '<button class="mode-card" type="button" data-mode="' + m.id + '" aria-pressed="' + (m.id === 'mixed') + '">' +
+        '<span class="mode-card__ru">' + m.ru + ' <span class="mode-card__zh" lang="zh-CN">' + m.zh + '</span></span>' +
+        '<span class="mode-card__desc">' + m.desc + '</span>' +
+        '<span class="mode-card__detail">' + m.detail + '</span>' +
+      '</button>';
+    }).join('');
+  }
+
+  function renderHud() {
+    var n = Quiz.qs.length;
+    var hud = $('.quiz-hud');
+    if (!hud) return;
+    hud.querySelector('.hud-count').innerHTML = 'Вопрос <b>' + (Quiz.i + 1) + '</b> / ' + n;
+    hud.querySelector('.hud-score').textContent = '✓ ' + Quiz.score;
+    var bar = hud.querySelector('.hud-bar > span');
+    if (bar) bar.style.width = (Quiz.i / n) * 100 + '%';
+  }
+
+  function renderQuestion() {
+    var q = Quiz.qs[Quiz.i];
+    var n = Quiz.qs.length;
+    var stage = $('#quiz-stage');
+    var optLang = q.type === 'meaning' ? 'zh-CN' : 'ru';
+
+    stage.innerHTML =
+      '<div class="quiz-hud">' +
+        '<span class="hud-count">Вопрос <b>1</b> / ' + n + '</span>' +
+        '<span class="hud-bar" aria-hidden="true"><span></span></span>' +
+        '<span class="hud-score">✓ 0</span>' +
+      '</div>' +
+      '<div class="quiz-question">' +
+        '<div class="q-meta"><span>' + q.kind + '</span><span>' + q.typeName + '</span></div>' +
+        '<p class="q-stem">' + q.stem + '</p>' +
+        '<div class="q-prompt">' + q.promptHtml + '</div>' +
+        '<div class="q-options" role="group" aria-label="Варианты ответа">' +
+          q.options.map(function (o, i) {
+            return '<button class="option" type="button" data-opt="' + i + '">' +
+              '<span class="option__key">' + KEYS[i] + '</span>' +
+              '<span lang="' + optLang + '">' + o.text + '</span>' +
+            '</button>';
+          }).join('') +
+        '</div>' +
+        '<div class="q-feedback" id="q-feedback" aria-live="polite"></div>' +
+        '<div class="q-actions">' +
+          '<button class="btn btn--dark" type="button" id="q-next" hidden>' +
+            (Quiz.i === n - 1 ? 'Показать результат' : 'Далее') +
+            icon('ui-arrow', 'ic--sm') +
+          '</button>' +
+        '</div>' +
+      '</div>';
+
+    renderHud();
+
+    $$('.option', stage).forEach(function (btn) {
+      btn.addEventListener('click', function () { answerQuestion(Number(btn.dataset.opt)); });
+    });
+    $('#q-next').addEventListener('click', nextQuestion);
+    Quiz.locked = false;
+
+    var qbox = $('.quiz-question', stage);
+    if (qbox) {
+      qbox.setAttribute('tabindex', '-1');
+      qbox.focus({ preventScroll: true });
+    }
+  }
+
+  function answerQuestion(idx) {
+    if (Quiz.locked) return;
+    Quiz.locked = true;
+
+    var q = Quiz.qs[Quiz.i];
+    var chosen = q.options[idx];
+    var ok = !!chosen.ok;
+    if (ok) Quiz.score += 1;
+    Quiz.answers.push({ q: q, ok: ok, chosen: chosen.text });
+
+    var buttons = $$('#quiz-stage .option');
+    buttons.forEach(function (btn, i) {
+      btn.disabled = true;
+      var key = btn.querySelector('.option__key');
+      if (q.options[i].ok) {
+        btn.classList.add('is-correct');
+        key.innerHTML = icon('ui-check');
+      } else if (i === idx) {
+        btn.classList.add('is-wrong');
+        key.innerHTML = icon('ui-x');
+      } else {
+        btn.classList.add('is-dim');
+      }
+    });
+
+    var hud = $('.quiz-hud');
+    if (hud) {
+      hud.querySelector('.hud-score').textContent = '✓ ' + Quiz.score;
+      var bar = hud.querySelector('.hud-bar > span');
+      if (bar) bar.style.width = ((Quiz.i + 1) / Quiz.qs.length) * 100 + '%';
+    }
+
+    var full = '';
+    if (q.type === 'gap') {
+      full = '<div class="feedback__full" lang="ru">' + q.fullRu +
+             '<span lang="zh-CN">' + q.fullZh + '</span></div>';
+    }
+
+    var ansLang = q.type === 'meaning' ? 'zh-CN' : 'ru';
+    $('#q-feedback').innerHTML =
+      '<div class="feedback feedback--' + (ok ? 'ok' : 'bad') + '">' +
+        '<span class="feedback__icon">' + icon(ok ? 'ui-check' : 'ui-x') + '</span>' +
+        '<div>' +
+          '<span class="feedback__title">' + (ok ? 'Верно!' : 'Не совсем') + '</span>' +
+          (ok ? '' : '<p>Правильный ответ: <b lang="' + ansLang + '">' + q.correctText + '</b>.</p>') +
+          '<p lang="zh-CN">' + q.explain + '</p>' +
+          full +
+        '</div>' +
+      '</div>';
+
+    var next = $('#q-next');
+    next.hidden = false;
+    next.focus();
+  }
+
+  function nextQuestion() {
+    Quiz.i += 1;
+    if (Quiz.i >= Quiz.qs.length) { finishQuiz(); return; }
+    renderQuestion();
+  }
+
+  function verdictFor(pct) {
+    if (pct >= 90) return { title: 'Отлично! <span lang="zh-CN">太棒了</span>', text: 'Вы уверенно владеете лексикой темы. Попробуйте другой режим или пройдите тест ещё раз — вопросы каждый раз новые.' };
+    if (pct >= 70) return { title: 'Хорошо! <span lang="zh-CN">很好</span>', text: 'Основные слова вы знаете. Загляните в разбор ошибок и повторите те вопросы, где были сложности.' };
+    if (pct >= 50) return { title: 'Неплохо, но есть над чем поработать <span lang="zh-CN">还需努力</span>', text: 'Вернитесь к словарю и сочетаниям, а затем пройдите тест ещё раз — особенно полезно повторить только ошибки.' };
+    return { title: 'Пока не получилось <span lang="zh-CN">还需要多练</span>', text: 'Начните с карточек в словаре, отметьте выученные слова и попробуйте снова. Тест можно проходить сколько угодно раз.' };
+  }
+
+  function finishQuiz() {
+    var total = Quiz.qs.length;
+    var pct = Math.round((Quiz.score / total) * 100);
+    var best = storage.get('torgovlya:best', null);
+    if (best === null || pct > best) {
+      best = pct;
+      storage.set('torgovlya:best', best);
+    }
+    updateQuizBest();
+
+    var wrong = Quiz.answers.filter(function (a) { return !a.ok; });
+    var v = verdictFor(pct);
+    var ringColor = pct >= 70 ? 'var(--forest)' : (pct >= 50 ? 'var(--gold)' : 'var(--rust)');
+
+    $('#quiz-stage').hidden = true;
+    var box = $('#quiz-result');
+    box.hidden = false;
+    box.innerHTML =
+      '<div class="result-head">' +
+        '<div class="score-ring" style="--p:0;--ring:' + ringColor + '"><div class="score-ring__val"><b>' + pct + '%</b><span>' + Quiz.score + ' из ' + total + '</span></div></div>' +
+        '<div class="result-copy">' +
+          '<h3>' + v.title + '</h3>' +
+          '<p>' + v.text + '</p>' +
+          '<div class="result-stats">' +
+            '<div><b>' + Quiz.score + '</b><span>верно · 正确</span></div>' +
+            '<div><b>' + (total - Quiz.score) + '</b><span>ошибок · 错误</span></div>' +
+            '<div><b>' + best + '%</b><span>лучший · 最好</span></div>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+      (wrong.length
+        ? '<div class="result-list"><h4>Разбор ошибок · 错题回顾</h4>' +
+            wrong.map(function (a) {
+              var ansLang = a.q.type === 'meaning' ? 'zh-CN' : 'ru';
+              return '<div class="result-item result-item--bad">' +
+                '<span class="result-item__icon">' + icon('ui-x') + '</span>' +
+                '<div class="result-item__body">' +
+                  '<p class="result-item__q">' + (a.q.resultTitle || a.q.short) + '</p>' +
+                  '<p class="result-item__a">' +
+                    (a.q.resultSub ? '<span class="muted">' + a.q.resultSub + '</span>' : '') +
+                    'Ваш ответ: <span lang="' + ansLang + '">' + a.chosen + '</span>. Правильно: <b lang="' + ansLang + '">' + a.q.correctText + '</b>' +
+                  '</p>' +
+                '</div>' +
+              '</div>';
+            }).join('') +
+          '</div>'
+        : '<p class="result-best">Ни одной ошибки — отличный результат! · 全部正确！</p>') +
+      '<div class="result-actions">' +
+        '<button class="btn btn--primary" type="button" data-quiz="restart">' + icon('ui-restart', 'ic--sm') + 'Пройти ещё раз</button>' +
+        (wrong.length ? '<button class="btn btn--dark" type="button" data-quiz="retry">Повторить ошибки</button>' : '') +
+        '<a class="btn btn--ghost" href="#vocab">К словарю</a>' +
+      '</div>' +
+      '<p class="result-best">Лучший результат сохраняется в этом браузере <span lang="zh-CN">· 最好成绩保存在本机浏览器中</span></p>';
+
+    var ring = box.querySelector('.score-ring');
+    if (ring) {
+      if (reducedMotion) {
+        ring.style.setProperty('--p', pct);
+      } else {
+        var value = 0;
+        var tick = function () {
+          value += 2;
+          ring.style.setProperty('--p', Math.min(value, pct));
+          if (value < pct) window.requestAnimationFrame(tick);
+        };
+        window.requestAnimationFrame(tick);
+      }
+    }
+
+    box.setAttribute('tabindex', '-1');
+    box.focus({ preventScroll: true });
+
+    box.querySelectorAll('[data-quiz]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        if (btn.dataset.quiz === 'retry') {
+          var retryQs = wrong.map(function (a) {
+            var q = a.q;
+            return Object.assign({}, q, {
+              options: shuffle(q.options.map(function (o) { return { text: o.text, ok: o.ok }; }))
+            });
+          });
+          beginQuiz('retry', retryQs);
+        } else {
+          beginQuiz(Quiz.fromRetry ? 'mixed' : Quiz.mode);
+        }
+      });
+    });
+
+    if (!reducedMotion) {
+      $('#quiz-shell').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  function beginQuiz(mode, customQuestions) {
+    Quiz.mode = mode;
+    Quiz.fromRetry = mode === 'retry';
+    Quiz.qs = customQuestions || pickQuestions(mode);
+    Quiz.i = 0;
+    Quiz.score = 0;
+    Quiz.answers = [];
+    Quiz.locked = false;
+
+    $('#quiz-start').hidden = true;
+    $('#quiz-result').hidden = true;
+    var stage = $('#quiz-stage');
+    stage.hidden = false;
+    renderQuestion();
+    if (!reducedMotion) {
+      $('#quiz-shell').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Подключение обработчиков                                            */
+  /* ------------------------------------------------------------------ */
+  function bindEvents() {
+    /* Озвучивание по клику на динамик */
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest('[data-say]');
+      if (!btn) return;
+      if (!TTS.supported) return;
+      e.preventDefault();
+      if (dialogue.playing) stopDialogue();
+      var text = btn.getAttribute('data-say');
+      btn.classList.add('is-speaking');
+      var remove = function () { btn.classList.remove('is-speaking'); };
+      TTS.speak(text, { rate: 0.92, onend: remove, onerror: remove });
+      window.setTimeout(remove, 9000);
+    });
+
+    /* Поиск */
+    var search = $('#vocab-search');
+    var timer = null;
+    search.addEventListener('input', function () {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(function () {
+        state.query = search.value;
+        renderVocab();
+      }, 120);
+    });
+
+    /* Фильтры и схема группы */
+    document.addEventListener('click', function (e) {
+      var chip = e.target.closest('[data-filter]');
+      if (!chip) return;
+      var id = chip.getAttribute('data-filter');
+      var isBranch = !!chip.closest('.branch');
+      setFilter(id, isBranch);
+    });
+
+    /* Выученные слова */
+    document.addEventListener('click', function (e) {
+      var learn = e.target.closest('.learn-btn');
+      if (!learn) return;
+      var card = learn.closest('.word-card');
+      if (!card) return;
+      var id = card.getAttribute('data-id');
+      Learned.toggle(id);
+      var on = Learned.has(id);
+      card.classList.toggle('is-learned', on);
+      learn.setAttribute('aria-pressed', String(on));
+      learn.textContent = on ? 'Выучено ✓' : 'Выучил';
+    });
+
+    /* Диалог */
+    $('#play-dialogue').addEventListener('click', playDialogue);
+    $('#toggle-dialogue-zh').addEventListener('click', function () {
+      setDialogueZh(!dialogue.zh);
+    });
+    $('#toggle-stress').addEventListener('click', function () {
+      setStress(!dialogue.stress);
+    });
+
+    /* Текст */
+    $('#toggle-text-zh').addEventListener('click', function () {
+      var on = !$('#reader').classList.contains('show-zh');
+      setReaderZh(on);
+    });
+
+    /* Вопросы к тексту */
+    $('#check-questions').addEventListener('click', function (e) {
+      var btn = e.target.closest('.check-opt');
+      if (btn) answerCheck(btn);
+    });
+
+    /* Тест: выбор режима */
+    $('#quiz-modes').addEventListener('click', function (e) {
+      var card = e.target.closest('.mode-card');
+      if (!card) return;
+      Quiz.mode = card.getAttribute('data-mode');
+      $$('#quiz-modes .mode-card').forEach(function (c) {
+        c.setAttribute('aria-pressed', String(c === card));
+      });
+    });
+
+    $('#quiz-begin').addEventListener('click', function () {
+      beginQuiz(Quiz.mode);
+    });
+
+    /* Размер шрифта */
+    $$('[data-font]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var sizes = ['md', 'lg', 'xl'];
+        var current = sizes.indexOf(document.documentElement.getAttribute('data-fs') || 'md');
+        if (current < 0) current = 0;
+        var next = btn.getAttribute('data-font') === 'inc'
+          ? Math.min(sizes.length - 1, current + 1)
+          : Math.max(0, current - 1);
+        document.documentElement.setAttribute('data-fs', sizes[next]);
+        storage.set('torgovlya:fs', next);
+      });
+    });
+
+    /* Кнопка «к началу» в подвале и якоря */
+    $$('a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var id = link.getAttribute('href');
+        if (id === '#top' || id === '#') return;
+        var target = document.querySelector(id);
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
+        if (history.replaceState) history.replaceState(null, '', id);
+      });
+    });
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Навигация, прогресс чтения, появление блоков                        */
+  /* ------------------------------------------------------------------ */
+  function initNav() {
+    var sections = $$('main section[id]');
+    var links = {};
+    $$('.nav a, .footer-nav a').forEach(function (a) {
+      links[a.getAttribute('href').slice(1)] = a;
+    });
+
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          var id = entry.target.id;
+          $$('.nav a').forEach(function (a) {
+            var on = a.getAttribute('href') === '#' + id;
+            a.classList.toggle('is-active', on);
+            if (on) a.setAttribute('aria-current', 'true');
+            else a.removeAttribute('aria-current');
+          });
+        });
+      }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+      sections.forEach(function (s) { io.observe(s); });
+    }
+  }
+
+  function initScrollProgress() {
+    var bar = $('#scroll-bar');
+    if (!bar) return;
+    var update = function () {
+      var h = document.documentElement;
+      var max = h.scrollHeight - h.clientHeight;
+      var p = max > 0 ? (h.scrollTop || document.body.scrollTop) / max : 0;
+      bar.style.width = Math.min(100, Math.max(0, p * 100)) + '%';
+    };
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  }
+
+  function initReveal() {
+    if (reducedMotion || !('IntersectionObserver' in window)) return;
+    var targets = $$('.section-head, .word-card, .colloc, .about-card, .note-block, .extras, .field');
+    targets.forEach(function (el) { el.classList.add('reveal'); });
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
+
+    targets.forEach(function (el) { io.observe(el); });
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Старт                                                               */
+  /* ------------------------------------------------------------------ */
+  function init() {
+    window.ICONS.inject();
+    renderHeroArt();
+    renderField();
+    renderFilters();
+    renderVocab();
+    renderCollocs();
+    renderExtras();
+    renderDialogue();
+    renderReader();
+    renderCheck();
+    renderQuizModes();
+    updateQuizBest();
+
+    var savedFs = storage.get('torgovlya:fs', 0);
+    var sizes = ['md', 'lg', 'xl'];
+    document.documentElement.setAttribute('data-fs', sizes[savedFs] || 'md');
+
+    bindEvents();
+    initNav();
+    initScrollProgress();
+    Learned.update();
+
+    if (D.dialogue.gloss.length) setDialogueZh(true);
+    setReaderZh(false);
+    initReveal();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+
+</script>
+</body>
+</html>
